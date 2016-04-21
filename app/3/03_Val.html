@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Val attribute</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<form>
+		<label>login:</label><br>
+		<input type="text"><br><br>
+
+		<label>password:</label><br>
+		<input type="password"><br/><br>
+
+		<input type="text">
+		<input type="button" id="btnUpperCase" value="Upper Case"><br><br>
+
+		<label>text:</label><br>
+		<textarea>Some text in textarea</textarea><br><br>
+
+		<label>checkbox1:</label><input type="checkbox" value="check1" disabled="disabled"><br>
+		<label>checkbox2:</label><input type="checkbox" value="check2"><br>
+		<label>checkbox3:</label><input type="checkbox" value="check3"><br><br>
+
+		<label>radio1:</label><input type="radio" name="R1" value="Rv1" disabled="disabled"><br>
+		<label>radio2:</label><input type="radio" name="R1" value="Rv2"><br><br>
+
+		<label>button1:</label><input type="submit" value="submit"><br>
+		<label>button2:</label><input type="reset" value="reset"><br>
+		<label>button3:</label><button>buton</button><br><br>
+
+		<label>list:</label>
+		<select id="single">
+			<option>Item1</option>
+			<option>Item2</option>
+			<option>Item3</option>
+		</select>
+		<br/><br/>
+
+		<label>multiple list:</label> 
+		<select id="multiple" multiple="multiple">
+			<option selected="selected">Multiple</option>
+			<option>Multiple2</option>
+			<option selected="selected">Multiple3</option>
+		</select>
+		<br/><br/>
+
+		<input type="hidden" id="h1">
+		<input type="hidden" id="h2">
+	</form>
+
+	<div>
+		<form>
+			<select id="number_of_weeks">
+				<option value ="week1">1 Week</option>
+				<option value ="week2">2 Weeks</option>
+				<option value ="week3">3 Weeks</option>
+			</select>
+		</form>
+		<div id="divs">
+			<div id="week1" class="sel"> Week 1 </div>
+			<div id="week2"> Week 2 </div>
+			<div id="week3"> Week 3 </div>
+		</div>
+	</div>
+
+
+<script>
+$(document).ready(function(){
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+ 
+	// Ru: Задание 1. Получить текстовое значение элемента <textarea> и вывести в консоль
+	// En: Task 1. Get the text value of the element <textarea> and print it to the console.
+
+	
+	
+	// Ru: Задание 2. Установить в 1-ое текстовое поле текст "Some text in first input element"
+	// En: Task 2. Set the text "Some text in first input element" to the 1-st text field.
+
+	
+	
+	// Ru: Задание 3. Установить состояние 'отмечен' для элементов с значениями атрибута value - 'check2', 'check3', 'Rv1'. Использовать массив.
+	// En: Task 3. Set the state 'checked' for the elements with values 'check2', 'check3' and 'Rv1' in their attribute 'value'. Use array.
+
+	
+	
+	// Ru: Задание 4. Используя конструкцию $("select").on("change", function(){...}) получить выбранное значение элемента и вывести его в консоль.
+	// En: Task 4. Using construction $("select").on("change", function(){...}) get the selected value of the element and print it to the console. 
+
+	
+	
+	// Ru: Задание 5. Преобразовывать значение 2-го текстового поля в верхний регистр, когда пользователь кликает по кнопке btnUpperCase. Использовать toUpperCase().
+	// En: Task 5. Transfor the text value of the 2-nd text field in upper case when user click the button btnUpperCase. Use toUpperCase().
+
+	
+	
+	// Ru: Задание 6. Получить текстовое значение из элемента <textarea> и добавить его в элемент <label> перед элементом <textarea>. Результат "text: текст из textarea." Использовать метод .text( string ).
+	// En: Task 6. Get the text value from the elememnt <textarea> and add it to the element <label> which there is before element <textarea>. Result: "text: text from textarea". Use method .text( string ).
+
+	
+
+	// Ru: Задание 7. Реализовать функциональность: при выборе количества недель из <select id="number_of_weeks"> добавлять красную рамку элементам div в блоке <div id="divs">, так чтобы: при выборе 1 Week, рамка была у первого блока, при выборе 2 Weeks, рамка была у первого и второго блока, при выборе 3 Weeks, рамка была у первого, второго, третьего блока. Использовать конструкцию $("#number_of_weeks").on("change", function(){...});
+	// En: Task 7. Create feature: add red border to the elements <div> in the element <div id="divs">' when user selects the number of weeks in the following way: when user selects 1 Week - add red border to the 1-st block, when user selects 2 Weeks - add red border to the 1-st and 2-nd block and when user selects 3 Weeks - add red border to the 1-st, 2-nd and 3-rd blocks. Use construction $("#number_of_weeks").on("change", function(){...});
+
+
+});	
+</script>
+
+</body>
+</html>

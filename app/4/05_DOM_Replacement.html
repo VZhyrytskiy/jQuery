@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM Replacement</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.bold {
+	font-weight: bold;
+}
+td {
+	border: 1px solid silver;
+	width: 50px;
+}
+</style>
+</head>
+<body>
+	<p class="red">
+		<span class="sel">Red</span>
+		 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+		 <span class="blue">#1</span>
+	</p>
+	<p class="blue">
+		<img class="test" src="http://lorempixel.com/25/25/sports/1/">
+		Blue 
+		<span class="sel">Text</span> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. #2
+		<p class="inner">
+			<span id="sp1">Inner span p text</span>
+		</p>
+	</p> 
+		
+	<table>
+		<tr>
+			<td>a</td>
+			<td>b</td>
+			<td>a+b</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+	
+<script>
+$(document).ready(function(){
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+
+	// Ru: Задание 1. При клике на параграфе заменять его на элемент <textarea> с HTML-содержимым параграфа
+	// En: Task 1. When user clicks on the element <p>, repace it for the element <textarea> with html content of element <p>.
+
+	
+	
+	// Ru: Задание 2. При клике на любой ячейке в столбцах а и b показывать <input type="text"> для ввода числа. При клике на другой ячейке в этих же столбцах, предыдущий <input type="text"> прятать, выполнять  пересчет для последней ячейки, выводить новый <input type="text"> для текущей ячейки.
+	// En: Task 2. When user clicks on any cell in columns a and b, show element <input type="text"> and allow user to input number. When user clicks on any other cell in the same columns, hide previous <input type="text">, calculate the value for the last cell, show new <input type="text"> in the current cell.
+
+
+	
+
+});
+</script>
+</body>
+</html>

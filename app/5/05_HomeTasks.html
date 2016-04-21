@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>05_HomeTasks</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.container {
+	width: 100%;
+	height: 70px;
+	background-color: #EEE;
+}
+div { 
+	width:60px; 
+	height:60px; 
+	margin:5px; 
+	float:left; 
+}
+.sel{
+	border: 1px solid red;
+	background-color: silver;
+}
+td, th{
+	border: 1px solid grey;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<span id="result">&nbsp;</span>
+		<div style="background-color:blue;"></div>
+		<div style="background-color:rgb(15,99,30);"></div>
+		<div style="background-color:#123456;"></div>
+		<div style="background-color:#f11;"></div>
+		<div class="sel">Text</div>
+	</div>	
+
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	
+	<p>
+	 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+
+	<table id="myTable">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Title</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Summ</th>
+			<th>Discount</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Хлеб</td>
+			<td>1</td>
+			<td>10</td>
+			<td>10</td>
+			<td>1</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Батон</td>
+			<td>2</td>
+			<td>7</td>
+			<td>14</td>
+			<td>2</td>
+			<td>13.72</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>3</td>
+			<td></td>
+			<td>24</td>
+			<td></td>
+			<td>23.71</td>
+		</tr>
+	</tfoot>
+	</table>
+	
+	 
+
+<script>
+$(document).ready(function(){
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+	
+	// Ru: Задание 1. Когда пользователь кликает по каком-либо элементе документа в блок span выводить его ширину.
+	// En: Task 1. When user clicks on any element in document put the width of this element into the span.
+	
+	
+	// Ru: Задание 2. Добавить 2-му параграфу следующие css свойства: 
+	//	1) border: 1px solid #cc0000 padding: 5px
+	//	2) background-color: #f6f6f6
+	// En: Task 2. Add the following css properties to the 2-nd paragraph:
+	//	1) border: 1px solid #cc0000 padding: 5px
+	//	2) background-color: #f6f6f6
+	
+	// Ru: Задание 3. Когда пользователь кликает на слове в параграфе, устанавливать желтый цвет фона для слова
+	// En: Task 3. When user clicks on the word in the paragraph setup yellow color as the background for word.
+	
+
+	// Ru: Задание 4. Используте конструкцию $(window).on("scroll", function() { ...}) и выполните следующие требования:
+	//	1) добавить класс sel для последнего параграфа, когда параграф появится в окне и у него не будет ранее добавленого класса: реализовать два варианта, когда параграф только появиться и когда появится весь. Для тестирования, уменьшите размер окна и скролируйте его вертикально.
+	// En: Task 4. Use the construction $(window).on("scroll", function() { ...}) and meet the following requirements:
+	//	1) add class sel for the last paragraph when it apears in the window and it hasn't class sel. Implement 2 cases: 1 - when the part of patagraph apears in the window; 2 - when whole paragraph apears in the window. For testing decrease the size of the window and scroll it certically.
+	
+	// Ru: Задание 5. В таблице #myTable раскрасить строки чередуя цвета, строку с названиями колонок и итоговую строку раскрасить в другие цвета.
+	//	При клике .on("click", f() {...}) на колонках Quantity, Price, Discount должны появляться поля ввода с содержимым ячеек
+	//	При потере фокуса on("blur", f(){...}) на этих же колонках должно происходить замена старого значения на новое.
+	//	Проводить пересчет для колонок с суммами и итоговую строку.	
+	// En: Task 5. Paint the odd lines in the table #myTable into one color, even lines - into other color. Paint head line and footer line in other colors.
+	// When click event fires on the columns Quantity, Price, Discount: replace the content of <td> onto <input> element with text content of <td>.
+	//	When blur event fires on the columns Quantity, Price, Discount: delete <input> element and put the value of the <input> into the <td> element
+	// Recalculate the value in the Summ and Total columns and in the total row.
+
+});	
+</script>
+
+</body>
+</html>

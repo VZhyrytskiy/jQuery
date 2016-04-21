@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<style>
+.sel {
+    border: 3px solid red;
+}
+</style>
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <iframe id="iframe" src="04_iframe_content.html"></iframe>
+    <iframe id="iframe2" src="04_proxy.php?url=http://www.ukr.net"></iframe>
+  </div>
+  
+<script>
+$(document).ready(function(){
+  // 0. Same origin policy
+
+  // 1.1 event "load" and handler
+  $("#iframe").on("load", function(){
+    // 3 ways to access elements
+    $("body", $("#iframe").prop("contentWindow").document).prepend("1");
+    $("body", $("#iframe")[0].contentWindow.document).prepend("2");
+    $("#iframe").contents().find("body").prepend("3");
+
+    // 1.2 classes should be included in iframe document
+    $("#iframe").contents().find("li").addClass("sel");
+
+    // 1.3. how to create new element in iframe
+    $("<li>New Item 1</li>").appendTo( $("#iframe").contents().find(".topnav") );   
+  });
+
+  // 1. Different origin policy, we shoud use, for example, proxy.php with the next content
+  //  echo file_get_contents( $_GET["url"] );
+  $("#iframe2").on("load", function(){
+    $("#iframe2").contents().find("div.top-logo img").css("border", "2px solid red");    
+  });
+  
+});	
+</script>
+
+</body>
+</html>

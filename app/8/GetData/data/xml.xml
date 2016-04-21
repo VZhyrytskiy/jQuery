@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cheques
+		xmlns:xsi="htpp://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="data-schema.xsd">
+
+	<header>
+		<shop_name type="Магазин">ТОВ "Фудмаркет"</shop_name>
+		<shop_address>
+			<city>м.Київ</city>
+			<street>вул.Кудряшова, 1</street>
+		</shop_address>
+		ПН <pn>363872326554</pn>
+		тел. <phone>0-800-50-15-05</phone>
+		<cashier cashDesk="7744">Толоконце А.С.</cashier>
+	</header>
+	
+	<body>
+		<item id="235250">
+			<name>Борошно кукрудзяне</name>
+			<quantity unit="шт">1</quantity>
+			<price currency="UAH" type="retail">6.04</price>
+			<total>6.04</total>
+		</item>
+		<item id="235251">
+			<name>Борошно пшеничне</name>
+			<quantity unit="шт">2</quantity>
+			<price currency="UAH" type="retail">5.42</price>
+			<total>10.84</total>
+		</item>
+	</body>
+
+	<footer>
+		<card>
+			<discountCard>111</discountCard>
+			<!-- либо, либо -->
+			<bonusCard>111</bonusCard>
+		</card>
+		<taxPercent value="20" />
+		<dateTime>24-10-11 18:27:13</dateTime>
+		<zn>З.Н.
+			<number>1008669</number>
+			<date>01-03-10</date>
+		</zn>
+	</footer>
+	
+</cheques>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

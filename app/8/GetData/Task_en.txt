@@ -1,0 +1,32 @@
+﻿En: Task 1
+Write your code in script.js file.
+
+1. When a user clicks on the button #b1, get XML from the file /data/xml.xml and add the content of the element <shop_name> to the container #xmlContent, using method $.ajax().
+
+2. When a user clicks on the button #b2, get HTML from the file /data/html.html and add it's content to the container #htmlContent, using method .load(). 
+
+3. When a user clicks on the button #b3, get JSON from the file /data/json.json and add the value of key a to the container #jsonContent, using method $.ajax().
+
+4. When a user clicks on the button #b4, get JavaScript from the file /data/js.js, using method $.ajax() and run the function myAlert().
+
+5. For all requests, using method $.ajaxSetup, setup global options:
+-type: "GET"
+-global: true  
+
+6. For all requests implement global event handlers: 
+$(document).on({
+	"ajaxStart": function() {
+		// Show #log with fade effect during  1s.
+	},
+
+	"ajaxComplete": function(event, xhr, ajaxOptions) {
+		// add to the #log message "Request to " + here put the request link + " completed"
+	},
+
+	"ajaxStop": function() {
+		// Hide #log with fade effect during 1s.
+	}
+});
+
+7. For XML request switch off the global event handlers.
+

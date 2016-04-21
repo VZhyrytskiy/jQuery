@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM Insertion Inside</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.bold {
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+	<p class="red">
+		<span class="sel">Red</span>Lorem ipsum dolor sit amet, consectetur
+		<span class="blue">#1</span>
+	</p>
+	<div>
+		<div>Lorem ipsum dolor sit amet</div>
+		<div>Duis aute irure dolor in reprehenderit</div>
+	</div> 
+	<p class="blue">
+		<img src="http://lorempixel.com/25/25/sports/1/" />Blue 
+		<span class="sel">Text</span> Lorem ipsum dolor sit amet #2
+	</p>
+
+<script>
+$(document).ready(function(){
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+
+	// Ru: Задание 1. Поместить каждый параграф в <div class="sel"></div>
+	// En: Task 1. Wrap each element <p> with a structure '<div class="sel"></div>'.
+
+	
+	
+	// Ru: Задание 2. Поместить все параграфы в <div class="sel"></div>
+	// En: Task 2. Wrap all element <p> with a structure '<div class="sel"></div>'
+
+	
+
+	// Ru: Задание 3. Поместить содержимое каждого параграфа в <div class="sel"></div>
+	// En: Task 3. Wrap the content of each element <p> with a structure '<div class="sel"></div>'.
+
+	
+
+});
+</script>
+</body>
+</html>

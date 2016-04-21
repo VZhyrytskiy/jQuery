@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+</style>
+</head>
+<body>
+	<div class="c3">DIV 1</div>
+
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	
+	<span class="c1">SPAN 1</span>
+	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	
+	<button id="dt">Switch</button>
+	<div class="c3">
+		<ul class="topnav">
+			<li>Item 1</li>
+			<li>Item 2 
+				<ul>
+					<li>Nested item 1</li>
+					<li>Nested item 2</li>
+					<li>Nested item 3</li>
+				</ul>
+			</li>
+			<li>Item 3</li>
+		</ul>
+	</div>
+	<div style="display: none;">DIV 3 <div>DIV 4 in DIV3</div></div>
+	<button id="btn">Click to show</button>
+	
+
+<script>
+$(document).ready(function(){
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+	
+	// Ru: Задание 1. Спрятать 1-ый элемент <div>, когда пользователь кликнет на нем.
+	// En: Task 1. Hide 1-st element <div>, when user clicks on it.
+
+	
+	
+	// Ru: Задание 2. Когда пользователь кликнет по параграфах #p1, #p2, прятать текущий параграф со скростью 600 мс. и после этого выводить сообщение с помощью alert "Параграф #p1/#p2(для каждого параграфа выводить свой id) спрятан".
+	// En: Task 2. When user clicks on the paragraphs #p1, #p2, hide the current paragraph and after that show message "Paragraph #p1/#p2(for each paragraph their own id) has hidden"
+
+
+	
+	// Ru: Задание 3. Когда пользователь кликнет по кнопке #btn, показать <div>, который находиться перед ней, со скоростью 600 мс.
+	// En: Task 3. When user clicks on the button #btn, show <div>, which there is before this button, with duration 600 ms.
+
+	
+	
+	// Ru: Задание 4. Когда пользователь кликает по кнопке #dt, прятать и показывать <div class="c3">, который находится за ней.
+	// En: Task 4. When user clicks on the button #dt, hide and show <div class="c3">, which there is after this button.
+
+	
+});	
+</script>
+</body>
+</html>

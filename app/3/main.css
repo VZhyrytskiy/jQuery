@@ -1,0 +1,16 @@
+#row > div {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	float: left;
+	background: #CCC;
+}
+.sel {
+	border: 3px solid red;
+}
+.sel2 {
+	text-decoration : underline;
+}
+.sel3 {
+	color: red;
+}

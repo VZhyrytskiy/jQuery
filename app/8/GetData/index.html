@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Get Data</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="script.js"></script>
+<style>
+#log {
+	display: none;
+	position: absolute;
+	left: 500px;
+	top: 25px;
+	border: 1px dotted red;
+	background-color: rgba( 255, 0, 0, 0.5 );
+}
+</style>
+</head>
+
+<body>
+	<button id="b1">Load XML</button>
+	<button id="b2">Load HTML</button>
+	<button id="b3">Load JSON</button>
+	<button id="b4">Load Script</button>
+	
+	
+	<ul id="log"></ul>
+	
+	<div id="xmlContent"></div>
+	<div id="htmlContent"></div>
+	<div id="jsonContent"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+Ru: Задание 1.
+
+Код писать в файле js/main.js
+
+Когда пользователь кликает на кнопку "Купить", реализовать эффект полета копии фото в корзину.
+Постепенно копия уменьшается в размере, а затем исчезает в корзине.
+После исчезновения фото, добавить в корзину стоимость и количество.
+Данные о товаре взять из атрибутов элемента div.product-card (index.html)
+Фото должно двигаться в верном направлении даже 
+при перемещении корзины div#basket в другое место
+
+En: Task 1.
+
+Code write in the file js/main.js
+
+When user clicks on the button "Buy" implement fly effect to the cart for the copy of photo.
+Slowly copy decreases its size, and then disappears into the cart.
+After the disappearance of the photo, add price and quantity to the cart.
+Get the data of the product from the attributes of the element div.product-card (index.html)
+Photo should move in the right direction, even when moving the cart div#basket elsewhere

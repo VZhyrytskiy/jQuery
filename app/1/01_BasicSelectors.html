@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic Selectors</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+</style>
+</head>
+<body>
+	<div class="c3">DIV 1</div>
+
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<span class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing</span>
+
+	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="c3">
+		<ul class="topnav">
+			<li>Audi</li>
+			<li>Citroen 
+				<ul>
+					<li>C-Zero</li>
+					<li>C1</li>
+					<li>C2</li>
+					<li>C3 Picasso</li>
+				</ul>
+			</li>
+			<li>Ford</li>
+		</ul>
+	</div>
+
+	<div>DIV 3 
+		<div>DIV 4 in DIV3</div>
+	</div>
+<script>
+$(document).ready(function(){
+
+	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	//En: Important! Before doing the next task, comment the previous decision.
+	
+	//Ru: Задание 1. Получить и вывести в консоль количество элементов на странице (.length).
+	//En: Task 1. Get and show the number of elements on the page using console.log (.length). 
+
+	
+	//Ru: Задание 2. Выбрать все элементы на странице и применить к ним красную рамку (.addClass("sel")).
+	//En: Task 2. Select all elements on the page and apply red border to them  (.addClass("sel")).
+
+	
+	//Ru: Задание 3. Выбрать все элементы <div> и применить к ним красную рамку.
+	//En: Task 3. Select all elements <div> and apply red border to them.
+
+	
+
+	//Ru: Задание 4. Выбрать элемент с атрибутом id='p1' и применить красную рамку к нему. 
+	//En: Task 4. Select the element with attribute id='p1' and apply red border to it.
+
+	
+	
+	//Ru: Задание 5. Выбрать элементы с атрибутом class='c1' и применить красную рамку к ним.
+	//En: Task 5. Select the elements with attribute class='c1' and apply red border to them.
+
+	
+
+	//Ru: Задание 6. Выбрать все элементы <span> с атрибутом class='c1' и применить красную рамку к ним.
+	//En: Task 6. Select all elements <span> with attribute class='c1' and apply red border to them.
+
+	
+
+	//Ru: Задание 7. Выбрать все элементы <div>, все элементы <p> с атрибутом class='c2', все элементы <p> с атрибутом id='p1' и применить красную рамку к ним. 
+	//En: Task 7. Select all elements <div>, all elements <p> with attribute class='c2', all elements <p> with attribute id='p1' and apply red border to them.
+
+	
+});	
+</script>
+
+</body>
+</html>

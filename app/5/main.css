@@ -1,0 +1,57 @@
+div { 
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	float: left;
+}
+p {
+	clear: left;
+	border: 1px dotted silver;
+	width: 50%;
+	padding: 10px;
+}
+.sel{
+	border: 1px solid red;
+	background-color: silver;
+}
+
+/* Offset */
+#div1{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+#div2 {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	padding:10px;
+	position: relative;
+	top: 200px;
+	left:200px;
+}
+#div3 {
+	width:50px;
+	height:50px;
+	background-color: green;
+	position: absolute;
+}
+
+/* Scroll */
+.toolbar {
+	width: 100%;
+	height: auto;
+}
+#div4 {
+	width: 300px;
+	height: 300px;
+	background-color: silver;
+	overflow:auto;
+}
+.p {
+	border:2px solid #666;
+	width:1000px;
+	height:1000px;
+	margin:10px;
+	padding:5px;
+}

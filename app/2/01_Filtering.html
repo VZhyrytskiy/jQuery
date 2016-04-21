@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Filters</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel   {
+border: 3px solid red;
+}
+.sel2   {
+text-decoration : underline;
+}
+.sel3   {
+color: red;
+}
+.blue   {
+border: 3px solid blue;
+}
+.black   {
+border: 3px solid black;
+}
+.yellow   {
+border: 3px solid yellow;
+}
+.text-blue   {
+color: blue;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="c3">DIV 1</div>
+
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<span class="c1">SPAN 1</span>
+
+	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+	<div class="c3">
+		<ul class="topnav">
+			<li>Audi</li>
+			<li>Citroen 
+				<ul id="inner">
+					<li>C-Zero</li>
+					<li>C1</li>
+					<li id="notli">C2</li>
+					<li>C3 Picasso</li>
+					<li>C3 Pluriel</li>
+					<li>C-Elysee</li>
+				</ul>
+			</li>
+			<li>Ford</li>
+		</ul>
+	</div>
+	
+	<div>DIV 3 
+		<div>DIV 4 in DIV3</div>
+	</div>
+
+<script>
+$(document).ready(function(){
+
+	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	//En: Important! Before doing the next task, comment the previous decision.
+
+	// Ru: Задание 1. Всем элементам 'р' добавить класс 'sel', а второму элементу 'p' дополнительно добавить класс 'sel2'.
+	// En: Task 1. Add class 'sel' to all elements 'p' and additionally add class 'sel2' to the 2-nd element 'p'.
+
+	
+	
+	// Ru: Задание 2. Всем элементам 'р' добавить класс 'sel', 2-му элементу 'p' дополнительно установить класс 'sel2', а 3-му элементу 'p' дополнительно установить класс 'sel3'.
+	// En: Task 2. Add class 'sel' to all elements 'p' and additionally add class 'sel2' to the 2-nd element 'p' and additionally add class 'sel3' to the 3-rd element 'p'.
+
+	
+
+	
+	
+	// Ru: Задание 3. Выбрать все элементы 'p', первому из них добавить класс 'blue', последнему из них добавить класс 'black'.
+	// En: Task 4. Select all elements 'p'. Add class 'blue' to the first element 'p' and add class 'black' to the last element 'p'.
+
+	
+	
+	// Ru: Задание 4. 2, 3, 4 элементам 'li' внутреннего списка добавить класс 'yellow'.
+	// En: Task 4. Add class 'yellow' to the 2-nd, 3-rd, 4-th elements 'li' of nested list 'ul'.
+
+	
+
+	// Ru: Задание 5. 2, 4 элементам 'li' внутреннего списка добавить класс 'text-blue'.
+	// En: Task 5. Add class 'text-blue' to the 2-nd, 4-th elements 'li' of nested list 'ul'.
+
+	 
+
+	
+	// Ru: Задание 6. Всем пунктам внутреннего списка, кроме 2, 5 добавить класс 'sel2' (использовать not(function(){})).
+	// En: Task 6. Add class 'sel2' to all elements 'li' of nested list 'ul' except 2-nd and 5-th elements. (use not(function(){}))
+
+	
+	
+	// Ru: Задание 7. Выбрать все элементы 'p'. Если среди них существует элемент с классом 'c1', вывести alert('p.c1 существует').
+	// En: Task 7. Select all elements 'p'. If there exists an element with class 'c1' among them, show alert('p.c1 exist').
+	
+	
+
+	// Ru: Задание 8. Выбрать все элементы 'div' и добавить класс 'black' тому элементу 'div', который содержит список 'ul'.
+	// En: Task 8. Select all elements 'div' and add class 'black' to the element which contains list 'ul'.
+
+	
+	
+	// Ru: Задание 9. Выбрать все элементы внешнего списка 'ul'. Четным добавить класс 'sel', нечетным - 'blue'.
+	// En: Task 9. Select all elements of outer list 'ul'. Add class 'sel' to the even elements 'li' and add class 'blue' to the odd elements of outer list 'ul'.
+
+	
+	
+	// Ru: Задание 10. Выбрать элементы 'li' внутреннего списка 'ul'. Создать функцию для .filter(), которая поможет отфильтровать 1-ый, 4-ый и 5-ый элементы и добавить им класс 'sel2'.
+	// En: Task 10. Select all elements 'li' of nested list 'ul'. Create function for .filter(), which helps to filter 1-st, 4-th and 5-th elements 'li' and then add class 'sel2' to them. 
+
+
+	
+	// Ru: Задание 11. Выбрать все элементы 'li' внутреннего списка 'ul'. Четным добавить класс 'sel3', первому четному дополнительно добавить класс 'sel', последнему четному дополнительно добавить класс 'sel2', нечетным добавить класс 'blue'.
+	// En: Task 11. Select all elements 'li' of nested list 'ul'. Add class 'sel3' to the even elements 'li', additionally add class 'sel' to the first even element 'li', additionally add class 'sel2' to the last even element 'li' and add class 'blue' to the odd elements 'li'.
+	
+	
+
+});	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM Clone</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.bold {
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<p class="red">
+		<span class="sel">Red</span>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+		 <span class="blue">#1</span>
+	</p>
+	<div class="blue">
+		<img class="test" src="http://lorempixel.com/25/25/sports/1/">
+		Blue 
+		<span class="sel">Text</span> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. #2
+		<p class="inner">
+			<span id="sp1">Inner span p text</span>
+		</p>
+	</div>
+	
+<script>
+$(document).ready(function(){
+	$( 'p.red' ).on('click', function(){
+		alert( $( this ).text() );
+	});
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+
+	// Ru: Задание 1. Создать копию первого элемента <p> и поместить его в конец документа
+	// так, чтобы для него тоже срабатывал обработчик, реализованный выше.
+	// En: Task 1. Create the clone of 1-st element <p> and insert it at the end of the document. Event handler for event 'click' which is above should work for this clone element as well.
+
+	
+
+
+	// Ru: Задание 2. Получить HTML-разметку отобраного элемента в элементе <body> вместе с открывающим и закрывающим тегами.
+	// En: Task 2. Get the HTML-markup of selected element in element <body> with open and close tags.
+
+
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Child Filters</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel {
+	border: 3px solid red;
+}
+</style>
+</head>
+<body>
+	<div class="c3">DIV 1</div>
+ 
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 
+	<span class="c1">SPAN 1</span>
+ 
+	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 
+	<div class="c3">
+		<ul class="topnav">
+			<li>Audi</li>
+			<li>Citroen 
+					<ul>
+						<li>C-Zero</li>
+						<li>C1</li>
+						<li>C2</li>
+						<li>C3 Picasso</li>
+						<li>C3 Pluriel</li>
+						<li>C-Elysee</li>
+						<li>C4</li>
+						<li>C4 Picasso</li>
+						<li>Grand C4 Picasso</li>
+					</ul>
+			</li>
+			<li>Ford</li>
+		</ul>
+	</div>
+	<div>DIV 3 
+		<div>DIV 4 in DIV3</div>
+	</div>
+	
+	<div>DIV 3 
+		<div>DIV 4 in DIV3</div>
+		<div>DIV 4 in DIV3</div>
+	</div>
+	
+	<div>DIV 3 
+		<div>DIV 4 in DIV3
+			<div>DIV 4 in DIV3</div>
+		</div>
+	</div>
+
+	<table id="myTable">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Title</th>
+		<th>Quantity</th>
+		<th>Price</th>
+		<th>Summ</th>
+		<th>Discount, %</th>
+		<th>Total</th>
+	</tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>1</td>
+		<td>Bread</td>
+		<td>1</td>
+		<td>10</td>
+		<td>10</td>
+		<td>1</td>
+		<td>9.99</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Butter</td>
+		<td>2</td>
+		<td>7</td>
+		<td>14</td>
+		<td>2</td>
+		<td>13.72</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	  <tr>
+		<td></td>
+		<td></td>
+		<td>3</td>
+		<td></td>
+		<td>24</td>
+		<td></td>
+		<td>23.71</td>
+	</tr>
+	</tfoot>
+	</table>
+
+<script>
+$( document ).ready(function(){
+
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+	
+	// Ru: Задание 1. Выбрать элемент <div>, который является единственным дочерним элементом у своего родителя и применить красную рамку к нему.
+	// En: Task 1. Select element <div> which is only one child of its parent and apply red border to it.
+
+	
+
+
+	
+	// Ru: Задание 2. Выбрать каждый третий элемент <li> у вложенного списка <ul> и применить красную рамку к ним.
+	// En: Task 2. Select each 3-rd element <li> of nested list <ul> and apply red border to them.
+
+	
+
+	// Ru: Задание 3. Выбрать в каждом ряду в элементе <tbody> ячейки, которые содержат следующие данные: quantity, price, discount.
+	// En: Task 3. Select in each row in element <tbody> cells which contain following data: quantity, price, discount.
+
+	
+
+});
+</script> 
+</body>
+</html>

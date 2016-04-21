@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="script.js"></script>
+<style>
+#frm {
+	width: 30%;
+	margin: 0 auto;
+}
+#frm > input[type=text],
+#frm > input[type=submit] {
+	display: block;
+}
+
+</style>
+</head>
+
+
+<body>
+	<form id="frm">
+		<label for="firstName">First Name</label>
+		<input id="firstName" name="firstName" type="text" autofocus value="" />
+		<label for="lastName">Last Name</label>
+		<input id="lastName" name="lastName" type="text" value="" />
+		<label for="rememberMe">Remember Me</label>
+		<input id="rememberMe" name="rememberMe" type="checkbox" value="1" />
+		<input type="submit" value="Send" />
+	</form>
+</body>
+</html>

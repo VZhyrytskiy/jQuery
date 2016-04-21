@@ -1,0 +1,15 @@
+En: Task 2. (?Home Task) 
+Write your code in script.js
+
+Implement the event handler for "submit" event of form, which should run next steps:
+1. Prevent submiting form
+2. If the previous request is not finished, abort it (method abort).
+3. Gather all data from form using method .serialize()
+4. Make all fields (input, select, button, textarea) disabled when the request run
+5. Make ajax-request using method $.ajax and set the following options:
+	- url http://www.vitava.com.ua/files/jquery/ajax-scripts/send-data.php
+	- dataType: jsonp
+	- data: data from form
+6. Implement callback function for .done(), which sould show the server response to the console
+7. Implement callback function for .fail(), which should show the value of  textStatus and errorThrown to the console
+8. Implement callback function for .always(), which should make all fields enabled

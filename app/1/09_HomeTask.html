@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home Task 1</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.yellow {
+	color: yellow;
+}
+.sel {
+	border: 3px solid red;
+}
+.sel2 {
+	border: 3px solid green;
+}
+</style>
+</head>
+<body>
+	<div id="d1">
+		<p id="p1" class="red">Paragraph 1 <span class="blue">Span 1 in paragraph1</span> Paragraph 1 </p>
+		<p id="p2" class="blue">Paragraph 2 <span>Span 2 in paragraph2</span> Paragraph 2 </p>
+		<p id="p3" >Paragraph 3 <span class="yellow">Span 3 in paragraph3</span> Paragraph 3 </p>
+		<p id="p4" class="blue">Paragraph 4 </p>
+		<span>Text in span 4</span>
+		Some text in DIV 1
+	</div> 
+	
+	<div>
+		<ul>
+			<li>List 1 Item 1</li>
+			<li>
+				<ul>
+					<li>List 2 Item 1</li>
+					<li>List 2 Item 2</li>
+					<li>
+						<ol>
+							<li>List 3 Item 1</li>
+							<li>List 3 Item 2</li>
+							<li>List 3 Item 3</li>
+						</ol>
+					</li>
+					<li>List 2 Item 4</li>
+				</ul>
+			</li>  
+			<li>List 1 Item 3</li>
+			<li>List 1 Item 4</li>
+			<li>List 1 Item 5</li>
+			<li>List 1 Item 6</li>
+		</ul>
+	</div>
+	
+	<div>
+		<span>Table</span>
+		<table>
+			<thead>
+				<tr>
+					<th>Field 1</th>
+					<th>Field 2</th>
+					<th>Field 3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cell 1 1</td>
+					<td>Cell 1 2</td>
+					<td>Cell 1 3</td>
+				</tr>
+				<tr>
+					<td>Cell 2 1</td>
+					<td>Cell 2 2</td>
+					<td>Cell 2 3</td>
+				</tr>
+				<tr>
+					<td>Cell 3 1</td>
+					<td>Cell 3 2</td>
+					<td>Cell 3 3</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Cell 4 2</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+<script>
+$( document ).ready(function(){
+	
+	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	// En: Important! Before doing the next task, comment the previous decision.
+
+	// Ru: Задание 1. Добавить класс "sel" ко 2-му <p> с классом blue.
+	// En: Task 1. Add class 'sel' to the 2-nd element <p> with attribute class='blue'.
+	
+	// Ru: Задание 2. Добавить класс "red" к спискам <ul> и <ol>.
+	// En: Task 2. Add class 'red' to the lists <ul> and <ol>.
+	
+	// Ru: Задание 3. К четным строкам таблицы, добавить класс "blue", к нечетным - "yellow" 	при этом заголовок должен остаться без класса.
+	// En: Task 3. Add class 'blue' to the even <tr> of the table and add class 'yellow' to the odd <tr> of the <table> and <tr> in th <thead> must be without class attribute.
+	
+	// Ru: Задание 4. К ячейкам Field 1, Field 2, Field 3 применить класс "sel".
+	// En: Task 4. Apply class 'sel' to the cells with the value 'Field 1', 'Field 2', 'Field 3'.
+	
+	// Ru: Задание 5. Применить класс "sel2" ко всем <div> элементам, которые не содержат в себе ни списков <ul>, <ol>, ни таблиц <table>.
+	// En: Task 5. Apply class 'sel2' to all elements <div> which don't contain elements <ul>, <ol>, <table>.
+	
+	// Ru: Задание 6. Применить класс "sel2" к пустым ячейкам таблицы.
+	// En: Task 6. Apply class 'sel2' to empty cells of the table.
+	
+	// Ru: Задание 7. Применить класс blue к ячейке таблицы, которая содержит строку "Cell 1 3".
+	// En: Task 7. Apply class 'blue' to the cell of table which contains the string 'Cell 1 3'. 
+	
+	// Ru: Задание 8. Применить к ячейке, которая находиться в 4 ряду и не пустая класс "sel"
+	// En: Task 8. Apply class 'sel' to the cells which are on the 4-th row and are not empty. 
+	
+	// Ru: Задание 9. Применить класс "sel2" к каждому 4 элементу вложеного списка <ul>.
+	// En: Task 9. Apply class 'sel2' to each 4-th element of the nested list <ul>.
+	
+});
+</script>
+</body>
+</html>

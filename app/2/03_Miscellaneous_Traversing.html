@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Miscellaneous Traversing</title>
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+<style>
+.sel   {
+	border: 3px solid red;
+}
+.sel2   {
+	text-decoration : underline;
+}
+.sel3   {
+	color: red;
+}
+</style>
+</head>
+
+<body>
+	<div class="c3">DIV 1 with class = c3</div>
+	
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<span class="c1">SPAN 1</span>
+	
+	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<div class="c3">
+		<ul class="topnav">
+			<li>Audi</li>
+			<li class="l1">Citroen 
+				<ul id="inner">
+					<li>C-Zero</li>
+					<li>C1</li>
+					<li id="notli">C2</li>
+					<li>C3 Picasso</li>
+					<li class="l1">C3 Pluriel</li>
+					<li>C-Elysee</li>
+				</ul>
+			</li>
+			<li>Ford</li>
+		</ul>
+	</div>
+	<div id="container">DIV 3 
+		<div>DIV 4 in DIV3</div>
+	</div>
+
+<script>
+$(document).ready(function(){
+	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+	//En: Important! Before doing the next task, comment the previous decision.
+	
+	// Ru: Задание 1. Выбрать элемент 'p' с id='p1', добавить в объект jQuery элемент 'p' с id='p2', добавить им класс 'sel'.
+	// En: Task 1. Select element 'p' with id='p1', add element 'p' with id='p2' to the same jQuery object. Add class 'sel' to them.  
+
+	
+	
+	// Ru: Задание 2. Выбрать элемент 'p' с id='p1', добавить в jQuery объект элемент <span id='sp1'>Red Text in Span</span>, добавить им класс 'sel2'.
+	// En: Task 2. Select element 'p' with id='p1', add element <span id='sp1'>Red Text in Span</span> to the same jQuery object. Add class 'sel2' to them.
+
+
+	
+	// Ru: Задание 3. Выбрать элемент 'p' с id='p1', добавить в jQuery объект элемент 'li.l1', который находится во внутреннем списке. (Использовать контекст, document.getElementById("inner") или $()[], или $().get(0)). Добавить им класс 'sel3'.
+	// En: Task 3. Select element 'p' with id='p1', add element 'li.l1' which is in nested list 'ul' to the same jQuery object. (Use context document.getElementById("inner") or $()[], or $().get(0) for selecting element 'li.l1'). Add class 'sel3' to them.
+
+
+
+
+});	
+</script>
+
+</body>
+</html>
