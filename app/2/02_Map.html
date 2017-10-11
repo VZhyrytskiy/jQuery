@@ -1,75 +1,75 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>map &amp; each</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>map &amp; each</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
-	<div class="c3">DIV 1</div>
-	
-	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="c3">DIV 1</div>
 
-	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-	<span class="c1">SPAN 1</span>
- 
-	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-	<div class="c3">
-		<ul class="topnav">
-			<li>Audi</li>
-			<li>Citroen 
-					<ul id="inner">
-						<li>C-Zero</li>
-						<li>C1</li>
-						<li id="notli">C2</li>
-						<li>C3 Picasso</li>
-						<li>C3 Pluriel</li>
-						<li>C-Elysee</li>
-					</ul>
-			</li>
-			<li>Ford</li>
-		</ul>
-	</div>
-	<div>DIV 3 
-		<div>DIV 4 in DIV3</div>
-	</div>
-	
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <span class="c1">SPAN 1</span>
+
+    <p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="c3">
+        <ul class="topnav">
+            <li>Audi</li>
+            <li>Citroen
+                    <ul id="inner">
+                        <li>C-Zero</li>
+                        <li>C1</li>
+                        <li id="notli">C2</li>
+                        <li>C3 Picasso</li>
+                        <li>C3 Pluriel</li>
+                        <li>C-Elysee</li>
+                    </ul>
+            </li>
+            <li>Ford</li>
+        </ul>
+    </div>
+    <div>DIV 3
+        <div>DIV 4 in DIV3</div>
+    </div>
+
 
 <script>
 $(document).ready(function(){
-	/* Ru: Задание 1. Вывести в консоль строку, которая содержит значения всех атрибутов 'id', разделенные подчеркиванием
-		Для получения значения атрибутов использовать метод .attr("id"). 
-		После map() вызвать .get().join('_'); Реализовать два решения: с map и each
-		Результат: p1_p2_inner_notli 
-	*/
-	/* En: Task 1. Show string which contains the values of all attributes 'id' joined by underscore '_' in console.log.
-		Use method .attr('id') for geting the value of 'id' attribute.
-		Call .get().join('_') after method 'map'. Create 2 solutions with map and with each
-		Result: p1_p2_inner_notli 
-	*/
-
-	
+    /* Ru: Задание 1. Вывести в консоль строку, которая содержит значения всех атрибутов 'id', разделенные подчеркиванием
+        Для получения значения атрибутов использовать метод .attr("id").
+        После map() вызвать .get().join('_'); Реализовать два решения: с map и each
+        Результат: p1_p2_inner_notli
+    */
+    /* En: Task 1. Show string which contains the values of all attributes 'id' joined by underscore '_' in console.log.
+        Use method .attr('id') for geting the value of 'id' attribute.
+        Call .get().join('_') after method 'map'. Create 2 solutions with map and with each
+        Result: p1_p2_inner_notli
+    */
 
 
-});	
+
+
+});
 </script>
 
 </body>

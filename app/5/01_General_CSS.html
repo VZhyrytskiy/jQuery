@@ -1,65 +1,65 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>General CSS</title>
-	<link rel="stylesheet" href="main.css">
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>General CSS</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<span id="result">&nbsp;</span>
+    <span id="result">&nbsp;</span>
 
-	<div style="background-color:blue;"></div>
-	<div style="background-color:rgb(15,99,30);"></div>
-	<div style="background-color:#123456;"></div>
-	<div style="background-color:#f11;"></div>
-	<div class="sel">Text</div>
+    <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+    <div class="sel">Text</div>
 
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	// Note: Event handlers: .on("eventTypeName", function() {...});
-	
-	// Ru: Задание 1. Реализовать обработчик события "click" для 1-го и 2-го <div> согласно требований ниже:
-	//	1) получить значение их css свойства "background-color",
-	//	2) создать новый <div> после последнего <div>, и выводить в него значение этого свойства. Элементы <div> не должны множиться после каждого клика
-	//	3) установить цвет текста соответствующий значению css свойства "background-color"
-	// En: Task 1. Create "click" event handler for 1-st and 2-nd <div> according to following requirements:
-	//	1) get the value of their css property "background-color",
-	//	2) create new <div> after last <div>, and put the value of above css property as a content of <div>. <div> elements should not multiply after each click.
-	//  3) setup color of the text according to the value of "background-color"
+    // Note: Event handlers: .on("eventTypeName", function() {...});
 
-	
-		
-	// Ru: Задание 2. Реализовать обработчик события "click" для div.sel согласно требования ниже:
-	//	1) получить значение css свойства "border-top-color" и вывести его в span#result.
-	// En: Task 2. Create "click" event handler for div.sel according to following requirements:
-	//	1) get the value of its css property "border-top-color" and put it into span#result.
-
-	
-	
-	// Ru: Задание 3. Реализовать обработчики событий "mouseover" и "mouseout" для каждого <div> согласно требований ниже:
-	//	1) mouseover: измененить ширину с текущего значения на новое значение 100px и увеличить высоту на 50px, 
-	//	2) mouseout: вернуть ширину в 60px, а высоту в предыдущее значение.
-	// En: Task 3. Create "mouseover" and "mouseout" events handlers for each <div> according to following requirements:
-	//	1) mouseover: change the width from current value to 100px and increase the height by 50px, 
-	//	2) mouseout: return back the width to 60px, and return back the hight to the previous value.
-
-		
-	
-	// Ru: Задание 4. Реализовать обработчик события "click" для 2-4-го <div>  согласно требований ниже:
-	//	1) увеличить их высоту и ширину на 20%.
-	// En: Task 4. Create "click" event handler for 2-4th <div> according to following requirements:
-	//	1) increase their height and width by 20%.
-
-	
-
-	
+    // Ru: Задание 1. Реализовать обработчик события "click" для 1-го и 2-го <div> согласно требований ниже:
+    //    1) получить значение их css свойства "background-color",
+    //    2) создать новый <div> после последнего <div>, и выводить в него значение этого свойства. Элементы <div> не должны множиться после каждого клика
+    //    3) установить цвет текста соответствующий значению css свойства "background-color"
+    // En: Task 1. Create "click" event handler for 1-st and 2-nd <div> according to following requirements:
+    //    1) get the value of their css property "background-color",
+    //    2) create new <div> after last <div>, and put the value of above css property as a content of <div>. <div> elements should not multiply after each click.
+    //  3) setup color of the text according to the value of "background-color"
 
 
-});	
+
+    // Ru: Задание 2. Реализовать обработчик события "click" для div.sel согласно требования ниже:
+    //    1) получить значение css свойства "border-top-color" и вывести его в span#result.
+    // En: Task 2. Create "click" event handler for div.sel according to following requirements:
+    //    1) get the value of its css property "border-top-color" and put it into span#result.
+
+
+
+    // Ru: Задание 3. Реализовать обработчики событий "mouseover" и "mouseout" для каждого <div> согласно требований ниже:
+    //    1) mouseover: измененить ширину с текущего значения на новое значение 100px и увеличить высоту на 50px,
+    //    2) mouseout: вернуть ширину в 60px, а высоту в предыдущее значение.
+    // En: Task 3. Create "mouseover" and "mouseout" events handlers for each <div> according to following requirements:
+    //    1) mouseover: change the width from current value to 100px and increase the height by 50px,
+    //    2) mouseout: return back the width to 60px, and return back the hight to the previous value.
+
+
+
+    // Ru: Задание 4. Реализовать обработчик события "click" для 2-4-го <div>  согласно требований ниже:
+    //    1) увеличить их высоту и ширину на 20%.
+    // En: Task 4. Create "click" event handler for 2-4th <div> according to following requirements:
+    //    1) increase their height and width by 20%.
+
+
+
+
+
+
+});
 </script>
 
 </body>

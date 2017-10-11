@@ -1,142 +1,142 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Tree traversing</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Tree traversing</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel   {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .sel2   {
-	text-decoration : underline;
+    text-decoration : underline;
 }
 .sel3   {
-	color: red;
+    color: red;
 }
 .sel4   {
-	border: 3px solid green;
+    border: 3px solid green;
 }
 </style>
 </head>
 
 <body>
-	<div class="c3">DIV 1 with class=c3</div>
+    <div class="c3">DIV 1 with class=c3</div>
 
-	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-	<span class="c1">SPAN 1</span>
-	
-	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-	<div id="div2" class="c3">
-		<ul class="topnav" style="position: relative;">
-			<li id="li0">Audi</li>
-			<li class="l1">Citroen
-				<ul id="inner1">
-					<li>C-Zero</li>
-					<li>C1</li>
-					<li id="notli">C2</li>
-					<li>C3 Picasso</li>
-					<li class="l1">C3 Pluriel</li>
-					<li >C-Elysee</li>
-				</ul>
-			</li>
-			<li>Ford</li>
-		</ul>
-	</div>
-	<span class="c1">SPAN 2</span>
-	
-	<ul>
-		<li>1
-		<li>2
-	</ul>
-	
-	
-	<div id="container">DIV 3 
-		<div>DIV 4 in DIV3
-			<div>DIV 5</div>
-		</div>
-		<div>
-			<button disabled="disabled">First Button</button>
-			<span>Text</span>
-		</div>
-		<div>
-			<button>Second Button</button>
-			<span></span>
-		</div>
-		<p></p>
-	</div>
-	
+    <p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <span class="c1">SPAN 1</span>
+
+    <p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div id="div2" class="c3">
+        <ul class="topnav" style="position: relative;">
+            <li id="li0">Audi</li>
+            <li class="l1">Citroen
+                <ul id="inner1">
+                    <li>C-Zero</li>
+                    <li>C1</li>
+                    <li id="notli">C2</li>
+                    <li>C3 Picasso</li>
+                    <li class="l1">C3 Pluriel</li>
+                    <li >C-Elysee</li>
+                </ul>
+            </li>
+            <li>Ford</li>
+        </ul>
+    </div>
+    <span class="c1">SPAN 2</span>
+
+    <ul>
+        <li>1
+        <li>2
+    </ul>
+
+
+    <div id="container">DIV 3
+        <div>DIV 4 in DIV3
+            <div>DIV 5</div>
+        </div>
+        <div>
+            <button disabled="disabled">First Button</button>
+            <span>Text</span>
+        </div>
+        <div>
+            <button>Second Button</button>
+            <span></span>
+        </div>
+        <p></p>
+    </div>
+
 <script>
 $(document).ready(function(){
-	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	//En: Important! Before doing the next task, comment the previous decision.
+    //Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    //En: Important! Before doing the next task, comment the previous decision.
 
-	// Ru: Задание 1. Получить количество дочерних элементов 'p' у элемента с id='container' и вывести их в консоль.
-	// En: Task 1. Get the number of child elements 'p' of the element with id='container' and show it in console.log. 
+    // Ru: Задание 1. Получить количество дочерних элементов 'p' у элемента с id='container' и вывести их в консоль.
+    // En: Task 1. Get the number of child elements 'p' of the element with id='container' and show it in console.log.
 
-	
-	
-	// Ru: Задание 2. Получить все сестринские элементы у элемента с id='notli', не потерять текущий элемент, добавить всем нечетным элементам в jQuery объекте класс 'sel'.
-	// En: Task 2. Get all sibling elements of the element with id='notli', keep the current element in jQuery object and add class 'sel' to all odd elements in jQuery object.
 
-	
-	
-	// Ru: Задание 3. Найти ближайшего предка 'ul' для элемента c id='notli', добавить ему класс 'sel3'.
-	// En: Task 3. Find the closest parent 'ul' for the element with id='notli', add class 'sel3' to it. 
 
-	
-	
-	// Ru: Задание 4. В элементе 'div' с id='div2' найти внутренний список и добавить его элементам 'li' класс 'sel2'.
-	// En: Task 4. In the element 'div' with id='div2' find the nested list 'ul' and add class 'sel2' to its child elements 'li'.
+    // Ru: Задание 2. Получить все сестринские элементы у элемента с id='notli', не потерять текущий элемент, добавить всем нечетным элементам в jQuery объекте класс 'sel'.
+    // En: Task 2. Get all sibling elements of the element with id='notli', keep the current element in jQuery object and add class 'sel' to all odd elements in jQuery object.
 
-	
-	
-	// Ru: Задание 5. Получить следующий элемент после элемента '<button disabled="disabled">' и добавить ему класс 'sel3'.
-	// En: Task 5. Get the next element after the element '<button disabled="disabled">' and add class 'sel3' to it.
 
-	
-	
-	// Ru: Задание 6. Добавить всем элементам 'span', которые идут после элемента '<p id="p2" class="c1">' класс 'sel2'.
-	// En: Task 6. Add class 'sel2' to all elements 'span' which flows after element '<p id="p2" class="c1">'.
 
-	
-	
-	// Ru: Задание 7. Всем элементам 'p', которые идут после элемента '<div class="c3">' и до элемента '<span class="c1">' добавить класс 'sel4'.
-	// En: Task 7. Add class 'sel4' to all elements 'p' which flows between element '<div class="c3">' and '<span class="c1">'.
+    // Ru: Задание 3. Найти ближайшего предка 'ul' для элемента c id='notli', добавить ему класс 'sel3'.
+    // En: Task 3. Find the closest parent 'ul' for the element with id='notli', add class 'sel3' to it.
 
-	
-	
-	// Ru: Задание 8. Получить родителя элемента <li id="notli">, если это элемент с id='inner', вывести в консоль строчку 'Элемент с id="inner" является родителем элемента "li"'
-	// En: Task 8. Get the parent of the element <li id="notli">. If there is element with id='inner' show the string 'Element with id="inner" is the parent of li' in console.log.
 
-	
 
-	
+    // Ru: Задание 4. В элементе 'div' с id='div2' найти внутренний список и добавить его элементам 'li' класс 'sel2'.
+    // En: Task 4. In the element 'div' with id='div2' find the nested list 'ul' and add class 'sel2' to its child elements 'li'.
 
-	// Ru: Задание 9. Позиционированному предку элемента с id='notli' добавить класс 'sel4'.
-	// En: Task 9. Add class 'sel4' to the offset parent of the element with id='notli'.
 
-	
-});	
+
+    // Ru: Задание 5. Получить следующий элемент после элемента '<button disabled="disabled">' и добавить ему класс 'sel3'.
+    // En: Task 5. Get the next element after the element '<button disabled="disabled">' and add class 'sel3' to it.
+
+
+
+    // Ru: Задание 6. Добавить всем элементам 'span', которые идут после элемента '<p id="p2" class="c1">' класс 'sel2'.
+    // En: Task 6. Add class 'sel2' to all elements 'span' which flows after element '<p id="p2" class="c1">'.
+
+
+
+    // Ru: Задание 7. Всем элементам 'p', которые идут после элемента '<div class="c3">' и до элемента '<span class="c1">' добавить класс 'sel4'.
+    // En: Task 7. Add class 'sel4' to all elements 'p' which flows between element '<div class="c3">' and '<span class="c1">'.
+
+
+
+    // Ru: Задание 8. Получить родителя элемента <li id="notli">, если это элемент с id='inner', вывести в консоль строчку 'Элемент с id="inner" является родителем элемента "li"'
+    // En: Task 8. Get the parent of the element <li id="notli">. If there is element with id='inner' show the string 'Element with id="inner" is the parent of li' in console.log.
+
+
+
+
+
+    // Ru: Задание 9. Позиционированному предку элемента с id='notli' добавить класс 'sel4'.
+    // En: Task 9. Add class 'sel4' to the offset parent of the element with id='notli'.
+
+
+});
 </script>
 
 </body>

@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>DOM Clone</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>DOM Clone</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .sel2 {
-	text-decoration : underline;
+    text-decoration : underline;
 }
 span {
-	color: red;
+    color: red;
 }
 </style>
 </head>
 <body>
-	<h2 id="id2">Part I.</h2> 	
-	<h3 id="id3">Chapter 1. Lorem ipsum dolor sit amet</h3>
-	<h4 id="id4">Paragraph</h4>  
-	<p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	 
+    <h2 id="id2">Part I.</h2>
+    <h3 id="id3">Chapter 1. Lorem ipsum dolor sit amet</h3>
+    <h4 id="id4">Paragraph</h4>
+    <p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p><span>[1]</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. <span>[2]</span>Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. <span>[3]</span>Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. <span>[4]</span>Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
 
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	// Ru: Задание 1. Переформатировать текст:
-	// 1) Перед первым параграфом есть элемент <h4 id="id4">Paragraph</h4>. Добавить такой же элемент перед 2-го и 3-его параграфов.
-	// 2) Пронумеровать все элементы <h4 id="id4">Paragraph</h4> согласно образца <h4>Paragraph Х</h4>, где Х = 1 для 1-го параграфа, 2 - для 2-го и 3 - для 3-го.
-	// En: Task 1. Reformat text: 
-	// 1) There is element <h4 id="id4">Paragraph</h4> before the 1-st paragraph. Add the same element before 2-nd and 3-rd paragraphs.
-	// 2) Numbering all element <h4 id="id4">Paragraph</h4> according to the pattern <h4>Paragraph Х</h4>, where X is 1 for the 1-st paragraph, 2 - for the 2-nd one and 3 - for the 3-rd one. 
+    // Ru: Задание 1. Переформатировать текст:
+    // 1) Перед первым параграфом есть элемент <h4 id="id4">Paragraph</h4>. Добавить такой же элемент перед 2-го и 3-его параграфов.
+    // 2) Пронумеровать все элементы <h4 id="id4">Paragraph</h4> согласно образца <h4>Paragraph Х</h4>, где Х = 1 для 1-го параграфа, 2 - для 2-го и 3 - для 3-го.
+    // En: Task 1. Reformat text:
+    // 1) There is element <h4 id="id4">Paragraph</h4> before the 1-st paragraph. Add the same element before 2-nd and 3-rd paragraphs.
+    // 2) Numbering all element <h4 id="id4">Paragraph</h4> according to the pattern <h4>Paragraph Х</h4>, where X is 1 for the 1-st paragraph, 2 - for the 2-nd one and 3 - for the 3-rd one.
 
-	
-	// Ru: Задание 2. При клике на последнем параграфе добавить за ним параграф аналогичного содержания
-	// En: Task 2. When user cicks on the last paragraph, add new one with the same content after current paragraph.
-	
-	// Ru: Задание 3. Используя метод .insertBefore() добавить после <h2 id="id2">Part I.</h2> элемент <hr>
-	// En: Task 3. Add element <hr> after the element <h2 id="id2">Part I.</h2> using method .insertBefore();
-	
-	// Ru: Задание 4. Все параграфы поместить в элементы div, после чего добавить класс sel к каждому div. Выполнить одной цепочкой команд.
-	// En: Task 4. Wrap all paragraphs with a structure <div></div>; add class 'sel' to aech element <div>. Use chainability.
-	
-	// Ru: Задание 5. Удалить из 1-го параграфа элементы <span>.
-	// En: Task 5. Delete elements <span> from the 1-st paragraph.
-	
-	// Ru: Задание 6. При клике на 2-ом параграфе вывести вместо параграфа элемент <textarea> с текстовым cодержимым параграфа.
-	// En: Task 6. When user clicks on the 2-nd paragraph show element <textarea> with the text content of current paragraph instead of paragraph.
+
+    // Ru: Задание 2. При клике на последнем параграфе добавить за ним параграф аналогичного содержания
+    // En: Task 2. When user cicks on the last paragraph, add new one with the same content after current paragraph.
+
+    // Ru: Задание 3. Используя метод .insertBefore() добавить после <h2 id="id2">Part I.</h2> элемент <hr>
+    // En: Task 3. Add element <hr> after the element <h2 id="id2">Part I.</h2> using method .insertBefore();
+
+    // Ru: Задание 4. Все параграфы поместить в элементы div, после чего добавить класс sel к каждому div. Выполнить одной цепочкой команд.
+    // En: Task 4. Wrap all paragraphs with a structure <div></div>; add class 'sel' to aech element <div>. Use chainability.
+
+    // Ru: Задание 5. Удалить из 1-го параграфа элементы <span>.
+    // En: Task 5. Delete elements <span> from the 1-st paragraph.
+
+    // Ru: Задание 6. При клике на 2-ом параграфе вывести вместо параграфа элемент <textarea> с текстовым cодержимым параграфа.
+    // En: Task 6. When user clicks on the 2-nd paragraph show element <textarea> with the text content of current paragraph instead of paragraph.
 });
 </script>
 </body>

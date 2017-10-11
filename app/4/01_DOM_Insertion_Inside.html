@@ -1,85 +1,85 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>DOM Insertion Inside</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>DOM Insertion Inside</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .sel2 {
-	text-decoration : underline;
+    text-decoration : underline;
 }
 span {
-	color: red;
+    color: red;
 }
 </style>
 </head>
 <body>
-	<h2>Greeting 1</h2>
-	<h3>Greeting 2</h3>
-	<div class="container">
-	  <div class="inner">Hello</div>
-	  <div class="inner">Goodbye</div>
-	</div> 
+    <h2>Greeting 1</h2>
+    <h3>Greeting 2</h3>
+    <div class="container">
+      <div class="inner">Hello</div>
+      <div class="inner">Goodbye</div>
+    </div>
 
-	<p>
-		<b>Click</b> to change the 
-		<span id="tag">html</span>
-	</p>
-	<p>
-		to a 
-		<span id="text">text</span> node.
-	</p>
-	<p>
-		This 
-		<button name="nada">button</button> does nothing.
-	</p>
-	 
+    <p>
+        <b>Click</b> to change the
+        <span id="tag">html</span>
+    </p>
+    <p>
+        to a
+        <span id="text">text</span> node.
+    </p>
+    <p>
+        This
+        <button name="nada">button</button> does nothing.
+    </p>
+
 
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	// Ru: Задание 1. Когда пользователь кликнет по 1-ому элементу 'p', получить html контент этого параграфа и установить его обратно в элемент 'p' используя метод .text(). Когда пользователь кликнет по 2-ому элементу 'p', получить текстовый контент этого параграфа и установить его обратно в элемент 'p' используя метод .html(). 
-	// En: Task 1. When user clicks on the 1-st element 'p', get the html content of this element and set it back to the element 'p' using method .text(). When user clicks on the 2-nd element 'p', get the text content of this element and set it back to the element 'p' using method .html().
-
-	
-	
-	
-	// Ru: Задание 2. Установить <p>New paragraph</p> как содержимое элемента с атрибутом class='container'.
-	// En: Task 2. Set <p>New paragraph</p> as a content of the element with attribute class='container'
-
-	
-	
-	// Ru: Задание 3. Для каждого элемента 'div' в элементе '<div class="container">' поменять значение: "Hello" на "А Hello" и "Goodbye" на "B Goodbye".
-	// En: Task 3. Change the content of each element 'div' in element '<div class="container">' from "Hello" to "А Hello" and from "Goodbye" to "B Goodbye".
-
-	
-	 
-	// Ru: Задание 4. Добавить элемент "<span> IVAN</span>" последним дочерним элементом для первого элемента<div class="inner">.
-	// En: Task 4. Add element "<span> IVAN</span>" as the last child element of the 1-st element <div class="inner">.
-
-	
+    // Ru: Задание 1. Когда пользователь кликнет по 1-ому элементу 'p', получить html контент этого параграфа и установить его обратно в элемент 'p' используя метод .text(). Когда пользователь кликнет по 2-ому элементу 'p', получить текстовый контент этого параграфа и установить его обратно в элемент 'p' используя метод .html().
+    // En: Task 1. When user clicks on the 1-st element 'p', get the html content of this element and set it back to the element 'p' using method .text(). When user clicks on the 2-nd element 'p', get the text content of this element and set it back to the element 'p' using method .html().
 
 
-	 
-	// Ru: Задание 5. Добавить элемент "<span>IVAN </span>" первым дочерним элементом для второго элемента <div class="inner">.
-	// En: Task 5. Add element "<span>IVAN </span>" as the first child element of the 2-nd element <div class="inner">.
 
 
-	
-	// Ru: Задание 6. Добавить нумерацию к элементам <div class="inner">, начиная с 1.
-	// En: Task 6. Add numbering to elements <div class="inner">, starting with 1.
+    // Ru: Задание 2. Установить <p>New paragraph</p> как содержимое элемента с атрибутом class='container'.
+    // En: Task 2. Set <p>New paragraph</p> as a content of the element with attribute class='container'
 
 
-	// Ru: Задание 7. Переместить элементы <h2>, <h3> в <div class="inner"> и установить их первыми дочерними элементами
-	// En: Task 7. Move elements <h2>, <h3> in the element <div class="inner"> and set them as a first child element.
 
-	
-});	
+    // Ru: Задание 3. Для каждого элемента 'div' в элементе '<div class="container">' поменять значение: "Hello" на "А Hello" и "Goodbye" на "B Goodbye".
+    // En: Task 3. Change the content of each element 'div' in element '<div class="container">' from "Hello" to "А Hello" and from "Goodbye" to "B Goodbye".
+
+
+
+    // Ru: Задание 4. Добавить элемент "<span> IVAN</span>" последним дочерним элементом для первого элемента<div class="inner">.
+    // En: Task 4. Add element "<span> IVAN</span>" as the last child element of the 1-st element <div class="inner">.
+
+
+
+
+
+    // Ru: Задание 5. Добавить элемент "<span>IVAN </span>" первым дочерним элементом для второго элемента <div class="inner">.
+    // En: Task 5. Add element "<span>IVAN </span>" as the first child element of the 2-nd element <div class="inner">.
+
+
+
+    // Ru: Задание 6. Добавить нумерацию к элементам <div class="inner">, начиная с 1.
+    // En: Task 6. Add numbering to elements <div class="inner">, starting with 1.
+
+
+    // Ru: Задание 7. Переместить элементы <h2>, <h3> в <div class="inner"> и установить их первыми дочерними элементами
+    // En: Task 7. Move elements <h2>, <h3> in the element <div class="inner"> and set them as a first child element.
+
+
+});
 </script>
 </body>
 </html>

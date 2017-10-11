@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>MouseEvents</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>MouseEvents</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
-	background-color: yellow;
-} 
+    border: 3px solid red;
+    background-color: yellow;
+}
 </style>
 </head>
 <body>
-	<div class="c3">DIV 1</div>
+    <div class="c3">DIV 1</div>
 
-	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-	
-	<span class="c1">SPAN 1</span>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    <p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 
-	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-	<div class="c3">
-	<ul class="topnav">
-		<li>Audi</li>
-		<li>Citroen 
-			<ul>
-				<li>C-Zero</li>
-				<li>C1</li>
-				<li>C2</li>
-				<li>C3 Picasso</li>
-			</ul>
-		</li>
-		<li>Ford</li>
-	</ul>
-	</div>
-	<div>DIV 3 <div>DIV 4 in DIV3</div></div>
-	<span></span>
-	
-	<ul>
-		<li>Milk</li>
-		<li>Bread</li>
-		<li>Chips</li>
-		<li>Juice</li>
-	</ul>
-		
+    <span class="c1">SPAN 1</span>
+
+    <p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    <div class="c3">
+    <ul class="topnav">
+        <li>Audi</li>
+        <li>Citroen
+            <ul>
+                <li>C-Zero</li>
+                <li>C1</li>
+                <li>C2</li>
+                <li>C3 Picasso</li>
+            </ul>
+        </li>
+        <li>Ford</li>
+    </ul>
+    </div>
+    <div>DIV 3 <div>DIV 4 in DIV3</div></div>
+    <span></span>
+
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Chips</li>
+        <li>Juice</li>
+    </ul>
+
 <script>
 $(document).ready(function(){
-	// Ru: Задание 1. Когда пользователь нажимает левую кнопку(event.which == 1) мышки на списке ul.topnav, добавить ему класс "sel" и записать в последний спан текст "Готовы к движению" красным цветом,
-	// Когда пользователь отпускает левую кнопку мышки, убирать класс "sel" и очистить последний <span>
-	// Когда пользователь двигает мышкой с нажатой левой кнопкой мышки, выводить координаты мышки, используя function(event){ event.pageX, event.pageY ...}, в последний <span>.
-	// En: Task 1. When user presses left mouse button (event.which == 1) on the element ul.topnav, add class "sel" to this element and set the text = "We are ready to moving", set the color of text - red.
-	// When user releases left mouse button (event.which == 1) on the element ul.topnav, remove class "sel" from the current element and clear last <span>.
-	// When the user moves the mouse while holding down the left mouse button, display the coordinates of the mouse in the last <span>, using function(event){ event.pageX, event.pageY ...}
-
-
-	
-	// Ru: Задание 2. Когда пользователь наводит мышку на пункт последнего списка, добавлять после текста пункта элемент <span> c текстом красного цвета - переводом на русский: Молоко, Хлеб, Чипсы, Сок. Установить для span левый отступ 10px. Когда мышка покидает пункт списка, удалять <span>
-
-	// En: Task 2. When the user moves the mouse on the item of last list, add element <span> after the text list item with red text - translation into Russian: Молоко, Хлеб, Чипсы, Сок. Set the value of margin-left for the <span> to 10px. When the mouse leaves the item in the list, delete <span> 
+    // Ru: Задание 1. Когда пользователь нажимает левую кнопку(event.which == 1) мышки на списке ul.topnav, добавить ему класс "sel" и записать в последний спан текст "Готовы к движению" красным цветом,
+    // Когда пользователь отпускает левую кнопку мышки, убирать класс "sel" и очистить последний <span>
+    // Когда пользователь двигает мышкой с нажатой левой кнопкой мышки, выводить координаты мышки, используя function(event){ event.pageX, event.pageY ...}, в последний <span>.
+    // En: Task 1. When user presses left mouse button (event.which == 1) on the element ul.topnav, add class "sel" to this element and set the text = "We are ready to moving", set the color of text - red.
+    // When user releases left mouse button (event.which == 1) on the element ul.topnav, remove class "sel" from the current element and clear last <span>.
+    // When the user moves the mouse while holding down the left mouse button, display the coordinates of the mouse in the last <span>, using function(event){ event.pageX, event.pageY ...}
 
 
 
+    // Ru: Задание 2. Когда пользователь наводит мышку на пункт последнего списка, добавлять после текста пункта элемент <span> c текстом красного цвета - переводом на русский: Молоко, Хлеб, Чипсы, Сок. Установить для span левый отступ 10px. Когда мышка покидает пункт списка, удалять <span>
 
-});	
+    // En: Task 2. When the user moves the mouse on the item of last list, add element <span> after the text list item with red text - translation into Russian: Молоко, Хлеб, Чипсы, Сок. Set the value of margin-left for the <span> to 10px. When the mouse leaves the item in the list, delete <span>
+
+
+
+
+});
 </script>
 
 </body>

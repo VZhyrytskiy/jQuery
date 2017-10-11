@@ -1,46 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>DOM Insertion Outside</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>DOM Insertion Outside</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .red {
-	color: red;
+    color: red;
 }
 .blue {
-	color: blue;
+    color: blue;
 }
 </style>
 </head>
 <body>
-	<p class="red">
-		<span class="sel">Red</span> Text Paragraph 
-		<span class="blue">#1</span>
-	</p>
-	<p class="blue">
-		<img src="http://lorempixel.com/25/25/sports/1/">Blue 
-		<span class="sel">Text</span> Paragraph #2
-	</p>
-	
+    <p class="red">
+        <span class="sel">Red</span> Text Paragraph
+        <span class="blue">#1</span>
+    </p>
+    <p class="blue">
+        <img src="http://lorempixel.com/25/25/sports/1/">Blue
+        <span class="sel">Text</span> Paragraph #2
+    </p>
+
 
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
-	
-	// Ru: Задание 1. Переместить элемент <img> с его текущего места в новое место - после 2-го элемента <p>.
-	// En: Task 1. Move element <img> from its current place to new place - after 2-nd element <p>.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	
-	
-	// Ru: Задание 2. Переместить <span class="blue"> с его текущего месте в новое место - после каждого <span class="sel">
-	// En: Task 2. Move element <span class="blue"> from its current place to new place - after each element <span class="sel">.
+    // Ru: Задание 1. Переместить элемент <img> с его текущего места в новое место - после 2-го элемента <p>.
+    // En: Task 1. Move element <img> from its current place to new place - after 2-nd element <p>.
 
-	
+
+
+    // Ru: Задание 2. Переместить <span class="blue"> с его текущего месте в новое место - после каждого <span class="sel">
+    // En: Task 2. Move element <span class="blue"> from its current place to new place - after each element <span class="sel">.
+
+
 });
 </script>
 </body>

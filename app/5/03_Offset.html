@@ -1,39 +1,39 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Offset</title>
-	<link rel="stylesheet" href="main.css">
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Offset</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<div id="div1">Text</div>
-	<div id="div2">
-		<div id="div3">Text</div>
-	</div>
+    <div id="div1">Text</div>
+    <div id="div2">
+        <div id="div3">Text</div>
+    </div>
 
-	<span id="result">&nbsp;</span>
-	
+    <span id="result">&nbsp;</span>
+
 <script>
 $(document).ready(function(){
-	// Ru: Задание 1. Реализовать обработчик события "click" для #div1 согласно требования ниже:
-	//	1) получить смещение #div1 относительно документа и добавить его в #result,
-	//	2) установить смещение #div1 относительно документа {100,100}, 
-	//	3) получить новое его смещение относительно документа и добавить в #result,
-	//	4) получить смещение #div3 относительно родителя, 
-	//	5) после <span> создать новый элемент <span> и добавить туда полученное значение сдвига для #div3
-	//	6) сдвинуть #div3 на 20px влево и на 100px вверх и снова добавить во 2-ой <span>
-	// En: Task 1. Create "click" event handler for #div according to following requirements:
-	//	1) get the offset of  #div1 and add it to the #result,
-	//	2) setup offset of #div1 in {100,100}, 
-	//	3) get the new offset of #div1 and add it to the #result,
-	//	4) get the position #div3, 
-	//	5) after <span> create new <span> and put in it position value for #div3
-	//	6) move #div3 by 20px to the ledt and by 100px to the top and add the new value of position for #div3 to the 2-nd <span>
+    // Ru: Задание 1. Реализовать обработчик события "click" для #div1 согласно требования ниже:
+    //    1) получить смещение #div1 относительно документа и добавить его в #result,
+    //    2) установить смещение #div1 относительно документа {100,100},
+    //    3) получить новое его смещение относительно документа и добавить в #result,
+    //    4) получить смещение #div3 относительно родителя,
+    //    5) после <span> создать новый элемент <span> и добавить туда полученное значение сдвига для #div3
+    //    6) сдвинуть #div3 на 20px влево и на 100px вверх и снова добавить во 2-ой <span>
+    // En: Task 1. Create "click" event handler for #div according to following requirements:
+    //    1) get the offset of  #div1 and add it to the #result,
+    //    2) setup offset of #div1 in {100,100},
+    //    3) get the new offset of #div1 and add it to the #result,
+    //    4) get the position #div3,
+    //    5) after <span> create new <span> and put in it position value for #div3
+    //    6) move #div3 by 20px to the ledt and by 100px to the top and add the new value of position for #div3 to the 2-nd <span>
 
-	
 
-});	
+
+});
 </script>
 
 </body>

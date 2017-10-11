@@ -1,143 +1,143 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>DOM Removal</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>DOM Removal</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .red {
-	color: red;
+    color: red;
 }
 .blue {
-	color: blue;
+    color: blue;
 }
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 td, th{
-	border: 1px solid grey;
+    border: 1px solid grey;
 }
 </style>
 </head>
 <body>
-	<p class="red">
-		 <span class="sel">Red</span>
-		 Text Paragraph 
-		 <span class="blue">#1</span>
-	</p>
-	
-	<div class="blue">
-		<img class="test" src="http://lorempixel.com/25/25/sports/1/">
-		Blue 
-		<span class="sel">Text</span> 
-		Paragraph #2
-		<p class="inner">
-			<span id="sp1">Inner span p text</span>
-		</p>
-	</div>
+    <p class="red">
+         <span class="sel">Red</span>
+         Text Paragraph
+         <span class="blue">#1</span>
+    </p>
 
-	<div id="cars">
-		<a href="/audi/">Audi</a><br>
-		<a href="/bmw/">BMW</a><br>
-		<a href="/citroen/">Citroen</a><br>
-		<a href="/dodge/">Dodge</a><br>
-		<a href="/eagle/">Eagle</a><br>
-		<a href="/ford/">Ford</a><br>
-	</div>
+    <div class="blue">
+        <img class="test" src="http://lorempixel.com/25/25/sports/1/">
+        Blue
+        <span class="sel">Text</span>
+        Paragraph #2
+        <p class="inner">
+            <span id="sp1">Inner span p text</span>
+        </p>
+    </div>
 
-	<table id="myTable">
-	<thead>
-	<tr>
-		<th></th>
-		<th>ID</th>
-		<th>Title</th>
-		<th>Quantity</th>
-		<th>Price</th>
-		<th>Summ</th>
-		<th>Discount, %</th>
-		<th>Total</th>
-	</tr>
-	</thead>
-	<tbody>
-	  <tr>
-	  	<td><input type="checkbox"></td>
-		<td>1</td>
-		<td>Bread</td>
-		<td>1</td>
-		<td>10</td>
-		<td>10</td>
-		<td>1</td>
-		<td>9.99</td>
-	</tr>
-	<tr>
-		<td><input type="checkbox"></td>
-		<td>2</td>
-		<td>Butter</td>
-		<td>2</td>
-		<td>7</td>
-		<td>14</td>
-		<td>2</td>
-		<td>13.72</td>
-	</tr>
-	</tbody>
-	<tfoot>
-	  <tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td>3</td>
-		<td></td>
-		<td>24</td>
-		<td></td>
-		<td>23.71</td>
-	</tr>
-	</tfoot>
-	</table>
-	<button id="btnDelete">Delete</button>
+    <div id="cars">
+        <a href="/audi/">Audi</a><br>
+        <a href="/bmw/">BMW</a><br>
+        <a href="/citroen/">Citroen</a><br>
+        <a href="/dodge/">Dodge</a><br>
+        <a href="/eagle/">Eagle</a><br>
+        <a href="/ford/">Ford</a><br>
+    </div>
+
+    <table id="myTable">
+    <thead>
+    <tr>
+        <th></th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Summ</th>
+        <th>Discount, %</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>Bread</td>
+        <td>1</td>
+        <td>10</td>
+        <td>10</td>
+        <td>1</td>
+        <td>9.99</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>2</td>
+        <td>Butter</td>
+        <td>2</td>
+        <td>7</td>
+        <td>14</td>
+        <td>2</td>
+        <td>13.72</td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>3</td>
+        <td></td>
+        <td>24</td>
+        <td></td>
+        <td>23.71</td>
+    </tr>
+    </tfoot>
+    </table>
+    <button id="btnDelete">Delete</button>
 
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
-	
-	// Ru: Задание 1. Удалить все элементы <span class="blue">.
-	// En: Task 1. Delete all elements <span class="blue">.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	
-
-	
-	// Ru: Задание 2. Удалить контент у элемента <div class="blue">.
-	// En: Task 3. Delete the content of element <div class="blue">.
-
-	
-	
-	// Ru: Задание 3. Удалить родительский элемент у <span class="blue">.
-	// En: Task 3. Delete the parent element of element <span class="blue">.
-
-	
-
-	// Ru: Задание 4. Преобразовать элемент <div id="cars"> одной цепочкой команд: 
-	// 1) убрать <br> 
-	// 2) четные ссылки обвернуть в конструкцию <li></li>, нечетные <li><span class="sel"></span></li>
-	// 3) заменить <div id="cars"> на <ul id="cars">
-	// En: Task 4. Transform the element <div id="cars"> using chainability
-	// 1) Delete all elements <br>
-	// 2) Wrap all even element <a> with a structure <li></li> and wrap all odd element <a> with a structure <li><span class="sel"></span></li>
-	// 3) Replace <div id="cars"> for <ul id="cars">
+    // Ru: Задание 1. Удалить все элементы <span class="blue">.
+    // En: Task 1. Delete all elements <span class="blue">.
 
 
 
 
-	// Ru: Задание 5. Когда пользователь кликает по кнопке #btnDelete, удалять выделенные с помощью чекбокса строки таблицы #myTable
-	// En: Задание 5. When user clicks on the button #btnDelete, delete the checked rows (checked by checkbox) from the table #myTable 
+    // Ru: Задание 2. Удалить контент у элемента <div class="blue">.
+    // En: Task 3. Delete the content of element <div class="blue">.
 
-	
-	
 
-	
+
+    // Ru: Задание 3. Удалить родительский элемент у <span class="blue">.
+    // En: Task 3. Delete the parent element of element <span class="blue">.
+
+
+
+    // Ru: Задание 4. Преобразовать элемент <div id="cars"> одной цепочкой команд:
+    // 1) убрать <br>
+    // 2) четные ссылки обвернуть в конструкцию <li></li>, нечетные <li><span class="sel"></span></li>
+    // 3) заменить <div id="cars"> на <ul id="cars">
+    // En: Task 4. Transform the element <div id="cars"> using chainability
+    // 1) Delete all elements <br>
+    // 2) Wrap all even element <a> with a structure <li></li> and wrap all odd element <a> with a structure <li><span class="sel"></span></li>
+    // 3) Replace <div id="cars"> for <ul id="cars">
+
+
+
+
+    // Ru: Задание 5. Когда пользователь кликает по кнопке #btnDelete, удалять выделенные с помощью чекбокса строки таблицы #myTable
+    // En: Задание 5. When user clicks on the button #btnDelete, delete the checked rows (checked by checkbox) from the table #myTable
+
+
+
+
+
 });
 </script>
 

@@ -1,142 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Home work 2</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Home work 2</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-	border: 3px solid red;
+    border: 3px solid red;
 }
 .sel2 {
-	text-decoration : underline;
+    text-decoration : underline;
 }
 .sel3 {
-	color: red;
+    color: red;
 }
 </style>
 </head>
 
 <body>
-	<div class="c3">DIV 1</div>
-	
-	<p id="p1">Text Paragraph 1</p>
-	<p id="p2" class="c1">Text Paragraph 2</p>
-	
-	<span class="c1">SPAN 1</span>
-	
-	<p class="c2">Text Paragraph 3</p>
-	
-	<div class="c3">
-		<ul class="topnav">
-			<li>Item 1</li>
-			<li>Item 2 
-				<ul id="inner">
-					<li>Nested item 1</li>
-					<li>Nested item 2</li>
-					<li id="notli">Nested item 3</li>
-					<li>Nested item 4</li>
-					<li>Nested item 5</li>
-					<li>Nested item 6</li>
-				</ul>
-			</li>
-			<li>Item 3</li>
-		</ul>
-	</div>
-	<div>DIV 3 
-		<div>DIV 4 in DIV3</div>
-	</div>
+    <div class="c3">DIV 1</div>
+
+    <p id="p1">Text Paragraph 1</p>
+    <p id="p2" class="c1">Text Paragraph 2</p>
+
+    <span class="c1">SPAN 1</span>
+
+    <p class="c2">Text Paragraph 3</p>
+
+    <div class="c3">
+        <ul class="topnav">
+            <li>Item 1</li>
+            <li>Item 2
+                <ul id="inner">
+                    <li>Nested item 1</li>
+                    <li>Nested item 2</li>
+                    <li id="notli">Nested item 3</li>
+                    <li>Nested item 4</li>
+                    <li>Nested item 5</li>
+                    <li>Nested item 6</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div>DIV 3
+        <div>DIV 4 in DIV3</div>
+    </div>
 
 <script>
 $(document).ready(function(){
-	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	//En: Important! Before doing the next task, comment the previous decision.
+    //Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    //En: Important! Before doing the next task, comment the previous decision.
 
-	/* Ru: Задание 1. Выбрать дочерние элементы 'li' внутреннего списка 'ul' и добавить им классы:
-		первому элементу - 'sel'
-		второму - 'sel2'
-		четвертому - 'sel3'
-		пятому - 'sel3'
-		последнему - 'sel'
-		Использовать цепочку вызовов и минимальное количество методов .addClass()
-	
-	   En: Task 1. Select child elements 'li' of nested list 'ul' and add the following classes to them:
-		1-st element - 'sel'
-		2-nd element - 'sel2'
-		4-th element - 'sel3'
-		5-th element - 'sel3'
-		last element - 'sel'
-		Use chain calls and minumum quantity of method .addClass()
-	*/
+    /* Ru: Задание 1. Выбрать дочерние элементы 'li' внутреннего списка 'ul' и добавить им классы:
+        первому элементу - 'sel'
+        второму - 'sel2'
+        четвертому - 'sel3'
+        пятому - 'sel3'
+        последнему - 'sel'
+        Использовать цепочку вызовов и минимальное количество методов .addClass()
 
-	/*	Ru: Задание 2. Выбрать все элементы 'p' и назначить всем, кроме 2-го элемента класс 'sel'.
-		En: Task 2. Select all elements 'p' and add class 'sel' to all of them except 2-nd element.
-	*/
-	
-	/*	Ru: Задание 3. Выбрать все элементы 'p'. Если среди них есть элемент 'p' с классом 'с2', 
-		то четным элементам добавить класс 'sel2', а нечетным - 'sel3'.
-		En: Task 3. Select all elements 'p'. If there is element 'p' with class='c2' among them, add class 'sel2' to the even elements and add class 'sel3' to the odd elements.
-	*/
-	
-	/*	Ru: Задание 4. Выбрать элемент 'div', который содержит в себе еще один элемент 'div',
-		и выбранному элементу 'div' добавить класс 'sel'.
-		En: Task 4. Select element 'div' which contains another element 'div' and add class 'sel' to the selected element 'div'
-	*/
-	
-	/*	Ru: Задание 5. Добавить класс "sel2" ко всем элементам 'div', кроме тех, которые содержат элементы
-		'ul', 'ol', 'table'.
-		En: Task 5. Add class 'sel2' to all elements 'div' except those which contains elements 'ul', 'ol', 'table'.
-	*/
-	
-	/*	Ru: Задание 6. Используя метод 'map' добавить элементам 'li' каждого списка 'ul' 
-		следующие классы 'sel', 'sel2', 'sel3': 
-		1-му - 'sel', 
-		2-му - 'sel2', 
-		3-му - 'sel3', 
-		4-му - 'sel' и т.д.
-		En: Task 6. Using method 'map' add following classes to the elements 'li' of each list 'ul':
-		1-st - 'sel'
-		2-nd - 'sel2'
-		3-rd - 'sel3'
-		4-th - 'sel'
-		...
-	*/
+       En: Task 1. Select child elements 'li' of nested list 'ul' and add the following classes to them:
+        1-st element - 'sel'
+        2-nd element - 'sel2'
+        4-th element - 'sel3'
+        5-th element - 'sel3'
+        last element - 'sel'
+        Use chain calls and minumum quantity of method .addClass()
+    */
 
-	/*	Ru: Задание 7. Выбрать последний элемент 'p' и добавить к нему первый элемент 'div'.
-		Добавить им класс 'sel'.
-		En: Task 7. Select last element 'p' and add the first element 'div' to it. Add class 'sel' to them.
-	*/
-	
-	/*	Ru: Задание 8. Получить с помощью метода 'text()' значение текстового узла,
-		который находится в элементе 'div', что следует за 2-ым элементом 'div' с class='c3'
-		и вывести результат в консоль. 
-		Результат: "DIV 3 "
-		En: Task 8. Using method 'text()' get the value of text node which is in the element 'div' which follows the 2-nd element 'div' with class='c3' and show result in console.log
-		Result: "DIV 3 "
-	*/
-	
-	/*	Ru: Задание 9. Элементу 'ul' c class='topnav' добавить класс 'sel', а его детям - 'sel2'.
-		En: Task 9. Add class 'sel' to the element 'ul' with class='topnav' and add class 'sel2' to its child elements.
-	*/
-	
-	/*	Ru: Задание 10. Добавить 4-му брату элемента 'span' класс 'sel'.
-		En: Task 10. Add class 'sel' to the 4-th brother element of element 'span'.
-	*/
+    /*    Ru: Задание 2. Выбрать все элементы 'p' и назначить всем, кроме 2-го элемента класс 'sel'.
+        En: Task 2. Select all elements 'p' and add class 'sel' to all of them except 2-nd element.
+    */
 
-	/*	Ru: Задание 11. Ближайшему элементу 'li' к элементу 'li' c id='notli' добавить класс 'sel'.
-		En: Task 11. Add class 'sel' to the eleemnt 'li' which is the closest element 'li' for another element 'li' with id='notli'. 
-	*/
-	
-	/*	Ru: Задание 12. Получить все элементы 'li', которые находяться в элементе 'div' c class='c3' и 
-		добавить им класс 'sel'.
-		En: Task 12. Get all elements 'li' which are in the element 'div' with class='c3' and add class 'sel' to them.
-	*/
-	
-	/*	Ru: Задание 13. Если среди родителей элемента 'li' c id='notli' нет элемента 'span', 
-		то последнему элементу 'p' добавить класс 'sel'.
-		En: Task 13. If there isn't element 'span' among the parents of element 'li' with id='notli' then add class 'sel' to the last eleemnt 'p'. 
-	*/
-});	
+    /*    Ru: Задание 3. Выбрать все элементы 'p'. Если среди них есть элемент 'p' с классом 'с2',
+        то четным элементам добавить класс 'sel2', а нечетным - 'sel3'.
+        En: Task 3. Select all elements 'p'. If there is element 'p' with class='c2' among them, add class 'sel2' to the even elements and add class 'sel3' to the odd elements.
+    */
+
+    /*    Ru: Задание 4. Выбрать элемент 'div', который содержит в себе еще один элемент 'div',
+        и выбранному элементу 'div' добавить класс 'sel'.
+        En: Task 4. Select element 'div' which contains another element 'div' and add class 'sel' to the selected element 'div'
+    */
+
+    /*    Ru: Задание 5. Добавить класс "sel2" ко всем элементам 'div', кроме тех, которые содержат элементы
+        'ul', 'ol', 'table'.
+        En: Task 5. Add class 'sel2' to all elements 'div' except those which contains elements 'ul', 'ol', 'table'.
+    */
+
+    /*    Ru: Задание 6. Используя метод 'map' добавить элементам 'li' каждого списка 'ul'
+        следующие классы 'sel', 'sel2', 'sel3':
+        1-му - 'sel',
+        2-му - 'sel2',
+        3-му - 'sel3',
+        4-му - 'sel' и т.д.
+        En: Task 6. Using method 'map' add following classes to the elements 'li' of each list 'ul':
+        1-st - 'sel'
+        2-nd - 'sel2'
+        3-rd - 'sel3'
+        4-th - 'sel'
+        ...
+    */
+
+    /*    Ru: Задание 7. Выбрать последний элемент 'p' и добавить к нему первый элемент 'div'.
+        Добавить им класс 'sel'.
+        En: Task 7. Select last element 'p' and add the first element 'div' to it. Add class 'sel' to them.
+    */
+
+    /*    Ru: Задание 8. Получить с помощью метода 'text()' значение текстового узла,
+        который находится в элементе 'div', что следует за 2-ым элементом 'div' с class='c3'
+        и вывести результат в консоль.
+        Результат: "DIV 3 "
+        En: Task 8. Using method 'text()' get the value of text node which is in the element 'div' which follows the 2-nd element 'div' with class='c3' and show result in console.log
+        Result: "DIV 3 "
+    */
+
+    /*    Ru: Задание 9. Элементу 'ul' c class='topnav' добавить класс 'sel', а его детям - 'sel2'.
+        En: Task 9. Add class 'sel' to the element 'ul' with class='topnav' and add class 'sel2' to its child elements.
+    */
+
+    /*    Ru: Задание 10. Добавить 4-му брату элемента 'span' класс 'sel'.
+        En: Task 10. Add class 'sel' to the 4-th brother element of element 'span'.
+    */
+
+    /*    Ru: Задание 11. Ближайшему элементу 'li' к элементу 'li' c id='notli' добавить класс 'sel'.
+        En: Task 11. Add class 'sel' to the eleemnt 'li' which is the closest element 'li' for another element 'li' with id='notli'.
+    */
+
+    /*    Ru: Задание 12. Получить все элементы 'li', которые находяться в элементе 'div' c class='c3' и
+        добавить им класс 'sel'.
+        En: Task 12. Get all elements 'li' which are in the element 'div' with class='c3' and add class 'sel' to them.
+    */
+
+    /*    Ru: Задание 13. Если среди родителей элемента 'li' c id='notli' нет элемента 'span',
+        то последнему элементу 'p' добавить класс 'sel'.
+        En: Task 13. If there isn't element 'span' among the parents of element 'li' with id='notli' then add class 'sel' to the last eleemnt 'p'.
+    */
+});
 
 </script>
 

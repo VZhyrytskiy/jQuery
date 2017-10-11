@@ -1,65 +1,65 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Dimensions</title>
-	<link rel="stylesheet" href="main.css">
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Dimensions</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-  	<span id="result">&nbsp;</span>
-	<div style="background-color:blue;">Text</div>
-	<div style="background-color:blue; padding:10px;">Text</div>
-	<div style="background-color:blue; padding:10px; border:10px solid red;">Text</div>
-	<div style="background-color:blue; padding:10px; border:10px solid red; margin-top:10px; margin-left:10px;">Text</div>
-	
+      <span id="result">&nbsp;</span>
+    <div style="background-color:blue;">Text</div>
+    <div style="background-color:blue; padding:10px;">Text</div>
+    <div style="background-color:blue; padding:10px; border:10px solid red;">Text</div>
+    <div style="background-color:blue; padding:10px; border:10px solid red; margin-top:10px; margin-left:10px;">Text</div>
 
-	
+
+
 <script>
 $(document).ready(function(){
-	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	// En: Important! Before doing the next task, comment the previous decision.
+    // Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    // En: Important! Before doing the next task, comment the previous decision.
 
-	// Ru: Задание 1. Вывести в консоль .height(), .css("width") 1-го  элемента <div>
-	// En: Task 1. Show the value of .height(), .css("width") for 1-st element <div> in console.log.
-
-	
-	
-	// Ru: Задание 2. Реализовать обработчик события "click" для 2-го и 3-го <div> согласно требований ниже:
-	//	1)	установить высоту и ширину в 100px для следующего <div> относительно текущего <div>, 
-	//	2)	установить высоту и ширину в 50px для предыдущего <div> относительно текущего <div>.
-	// Установку значений провести цепочкой.
-	// En: Task 3. Create "click" event handler for 2-nd and 3-rd <div> according to the following requirements:
-	//	1) setup height and width equal 100px for the next <div> relative to the current <div>
-	//	2) setup height and width equal 50px for the previous <div> relative to the current <div>
-	// Use chanability.
+    // Ru: Задание 1. Вывести в консоль .height(), .css("width") 1-го  элемента <div>
+    // En: Task 1. Show the value of .height(), .css("width") for 1-st element <div> in console.log.
 
 
-	
-	// Ru: Задание 3. Реализовать обработчик события "click" для 3-го <div> согласно требований ниже:
-	//	1) получить значение его width+padding, width+padding+border 
-	//	2) создать новый <div> внутри последнего <div> после текста; 
-	//	3) установить ему значения: 
-	//		id="newDiv", 
-	//		width  = (width+padding)/2,
-    //		height = (width+padding+border)/2,	
-	//		цвет фона желтый, 
-	//		цвет текста синий 
-	//		текст "newDiv" 
-	// En: Task 3. Create "click" event handler 3-rd <div> according to the following requirements:
-	//	1) get its value of width+padding, width+padding+border 
-	//	2) create new <div> in the last <div> element after its text content 
-	//	3) setup following values for new <div>:
-	//		id="newDiv", 
-	//		width  = (width+padding)/2,
-    //		height = (width+padding+border)/2,	
-	//		background-color - yellow, 
-	//		color - blue 
-	//		text - "newDiv"
 
-	
+    // Ru: Задание 2. Реализовать обработчик события "click" для 2-го и 3-го <div> согласно требований ниже:
+    //    1)    установить высоту и ширину в 100px для следующего <div> относительно текущего <div>,
+    //    2)    установить высоту и ширину в 50px для предыдущего <div> относительно текущего <div>.
+    // Установку значений провести цепочкой.
+    // En: Task 3. Create "click" event handler for 2-nd and 3-rd <div> according to the following requirements:
+    //    1) setup height and width equal 100px for the next <div> relative to the current <div>
+    //    2) setup height and width equal 50px for the previous <div> relative to the current <div>
+    // Use chanability.
 
-});	
+
+
+    // Ru: Задание 3. Реализовать обработчик события "click" для 3-го <div> согласно требований ниже:
+    //    1) получить значение его width+padding, width+padding+border
+    //    2) создать новый <div> внутри последнего <div> после текста;
+    //    3) установить ему значения:
+    //        id="newDiv",
+    //        width  = (width+padding)/2,
+    //        height = (width+padding+border)/2,
+    //        цвет фона желтый,
+    //        цвет текста синий
+    //        текст "newDiv"
+    // En: Task 3. Create "click" event handler 3-rd <div> according to the following requirements:
+    //    1) get its value of width+padding, width+padding+border
+    //    2) create new <div> in the last <div> element after its text content
+    //    3) setup following values for new <div>:
+    //        id="newDiv",
+    //        width  = (width+padding)/2,
+    //        height = (width+padding+border)/2,
+    //        background-color - yellow,
+    //        color - blue
+    //        text - "newDiv"
+
+
+
+});
 </script>
 
 </body>

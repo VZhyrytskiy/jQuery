@@ -1,64 +1,64 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>General Attributes</title>
-	<link rel="stylesheet" href="main.css">
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>General Attributes</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<ul>
-		<li><a href="http://www.google.com">www.Google.com</a></li>
-		<li><a href="http://www.ukr.net" title="I like E-mail" >www.Ukr.net</a></li>
-	</ul>
+    <ul>
+        <li><a href="http://www.google.com">www.Google.com</a></li>
+        <li><a href="http://www.ukr.net" title="I like E-mail" >www.Ukr.net</a></li>
+    </ul>
 
-	<form>
-		<button>Enable</button>
-		<input type="text" disabled="disabled" value="can't edit this" />
-	</form>
+    <form>
+        <button>Enable</button>
+        <input type="text" disabled="disabled" value="can't edit this" />
+    </form>
 
-	<span></span>
-	<span data-myTitle="myTitle">title</span>
+    <span></span>
+    <span data-myTitle="myTitle">title</span>
 
 <script>
 $(document).ready(function(){
-	
 
-	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	//En: Important! Before doing the next task, comment the previous decision.
 
-	// Ru: Задание 1. Получить значение атрибута 'title' второго элемента <a> на странице и вывести его в консоль;
-	// En: Task 1. Get the value of the attribute 'title' of the 2-nd element <a> on the page and print it in the console.
+    //Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    //En: Important! Before doing the next task, comment the previous decision.
 
-	
-
-	// Ru: Задание 2. Получить значение атрибутов 'href' всех элементов <a> на странице, сформировать строку "href_val1, href_val2, ..." и добавить ее в элемент <span>, используя метод .text( string ).
-	// En: Task 2. Get the value of the attribute 'title' of all elements <a> on the page, build the sting like "href_val1, href_val2, ..." and add it to the element <span> using method .text( string ).
-
-	
-
-	
-	// Ru: Задание 3. Установить значение атрибута title = "I like Google" для 1-го элемента <a> на странице.
-	// En: Task 3. Set the string 'I like Google' as a value for the attribute 'title' of the 1-st element <a> on the page.
-
-	
-	
-	// Ru: Задание 4. Установить значение атрибута title = "I don't like Google" и class="sel" для 1-го элемента <a> на странице . Реализовать передачей объекта {...}.
-	// En: Task 4. Set the string 'I don't like Google' as a value for the attribute 'title' and the string 'sel' as a value for the attribute 'class' of the 1-st eleemnt <a> on the page. Use object {...} as a parameter. 
+    // Ru: Задание 1. Получить значение атрибута 'title' второго элемента <a> на странице и вывести его в консоль;
+    // En: Task 1. Get the value of the attribute 'title' of the 2-nd element <a> on the page and print it in the console.
 
 
 
-	
-	// Ru: Задание 5. Установить для всех элементов <a> на странице значение атрибута 'id' равное номеру элемента <a> на странице, после чего вывести эти значения в элемент <span>, используя .append( string ). Результат: id="id1" и id="id2", <span>id=id1id=id2</span>.
-	// En: Task 5. Set the string which consist of "id" and the number of element <a> on the page as the value of the attribute 'id' for all elements on the page. Add this values to the element <span> using method .append( string ). Result:  id="id1" и id="id2", <span>id=id1id=id2</span>.
+    // Ru: Задание 2. Получить значение атрибутов 'href' всех элементов <a> на странице, сформировать строку "href_val1, href_val2, ..." и добавить ее в элемент <span>, используя метод .text( string ).
+    // En: Task 2. Get the value of the attribute 'title' of all elements <a> on the page, build the sting like "href_val1, href_val2, ..." and add it to the element <span> using method .text( string ).
 
-	
 
-	
-	// Ru: Задание 6. По клику на кнопку сделать доступным для ввода элемент <input>, и установить фокус .focus(), используя $("button").on("click", function(){...});
-	// En: Task 6. Using construction $("button").on("click", function(){...}); make the element <input> enabled and setup the focus in it with the method .focus().
 
-	
+
+    // Ru: Задание 3. Установить значение атрибута title = "I like Google" для 1-го элемента <a> на странице.
+    // En: Task 3. Set the string 'I like Google' as a value for the attribute 'title' of the 1-st element <a> on the page.
+
+
+
+    // Ru: Задание 4. Установить значение атрибута title = "I don't like Google" и class="sel" для 1-го элемента <a> на странице . Реализовать передачей объекта {...}.
+    // En: Task 4. Set the string 'I don't like Google' as a value for the attribute 'title' and the string 'sel' as a value for the attribute 'class' of the 1-st eleemnt <a> on the page. Use object {...} as a parameter.
+
+
+
+
+    // Ru: Задание 5. Установить для всех элементов <a> на странице значение атрибута 'id' равное номеру элемента <a> на странице, после чего вывести эти значения в элемент <span>, используя .append( string ). Результат: id="id1" и id="id2", <span>id=id1id=id2</span>.
+    // En: Task 5. Set the string which consist of "id" and the number of element <a> on the page as the value of the attribute 'id' for all elements on the page. Add this values to the element <span> using method .append( string ). Result:  id="id1" и id="id2", <span>id=id1id=id2</span>.
+
+
+
+
+    // Ru: Задание 6. По клику на кнопку сделать доступным для ввода элемент <input>, и установить фокус .focus(), используя $("button").on("click", function(){...});
+    // En: Task 6. Using construction $("button").on("click", function(){...}); make the element <input> enabled and setup the focus in it with the method .focus().
+
+
 
 });
 </script>

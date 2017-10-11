@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Form Events</title>
-	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .input-width {
 	width: 250px;
@@ -20,7 +20,7 @@
 		<input id="in3" tabindex="3" type="checkbox" value="1"><br>
 		<label for="in4">Submit?</label><input id="in4" tabindex="4" type="checkbox" value="1">
 	</form>
-	
+
 <script>
 $(document).ready(function(){
 	// Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
@@ -29,19 +29,19 @@ $(document).ready(function(){
 	// Ru: Задание 1. При получении фокуса каким-либо полем ввода (type='text'), добавить ему зеленую рамку 1px solid green, создать после него элемент span, в который записать "Получен фокус", при потере фокуса убирать зеленую рамку, удалять спан.
 	// En: Task 1. Create 'focus' and 'blur' event handlers for any text input fields according to the following requirements:
 	// 'focus': add green border to the input field (1px solid green), create new <span> after current input element and add into this element text 'Focus is received'.
-	// 'blur': remove border, delete <span>. 
+	// 'blur': remove border, delete <span>.
 
-	
+
 
 	// Ru: Задание 2. Когда пользователь выделяет текст в первом поле ввода, выводить в консоль выделенный текст. Для реализации использовать substring(fromIndex, toIndex) и свойства DOM элемента selectionStart, selectionEnd
 	// En: Task 2. When user selects text in the 1-st text input element show selected text in console.log. For inmplementation use: substring(fromIndex, toIndex) and DOM properties of input element - selectionStart, selectionEnd
 
-	
 
-	// Ru: Задание 3. Отправить форму с данными, когда пользователь установит чекбокс id="in4", при этом проверить, чтобы поля ввода были заполнены. Если они не заполнены, форму не отправлять. 
+
+	// Ru: Задание 3. Отправить форму с данными, когда пользователь установит чекбокс id="in4", при этом проверить, чтобы поля ввода были заполнены. Если они не заполнены, форму не отправлять.
 	// En: Task 3. Submit form with data, when user set the checkbox #id="in4". Check whether text fields are fullfill, otherwise don't submit form.
 
-	
+
 
 
 });
