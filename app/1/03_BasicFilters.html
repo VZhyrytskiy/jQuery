@@ -1,117 +1,117 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Basic Filters</title>
-	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Basic Filters</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <style>
 .sel {
-		border: 3px solid red;
+        border: 3px solid red;
 }
 </style>
 </head>
 <body>
-	<h1>Header H1</h1>
+    <h1>Header H1</h1>
 
-	<form>
-		<input id="in1" tabIndex="1">
-		<input tabIndex="2">
-	</form>
+    <form>
+        <input id="in1" tabIndex="1">
+        <input tabIndex="2">
+    </form>
 
-	<div class="c3">DIV 1</div>
+    <div class="c3">DIV 1</div>
 
-	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<h2>Header H2</h2>
+    <h2>Header H2</h2>
 
-	<p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="p2" class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<span class="c1">SPAN 1</span>
+    <span class="c1">SPAN 1</span>
 
-	<p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<div class="c3">
-		<ul class="topnav">
-			<li>Audi</li>
-			<li>Citroen
-					<ul id="innernav">
-						<li>C-Zero</li>
-						<li>C1</li>
-						<li>C2</li>
-						<li>C3 Picasso</li>
-						<li>C3 Pluriel</li>
-						<li>C-Elysee</li>
-					</ul>
-			</li>
-			<li>Ford</li>
-		</ul>
-	</div>
-	<div>DIV 3
-		<div>DIV 4 in DIV3</div>
-	</div>
+    <div class="c3">
+        <ul class="topnav">
+            <li>Audi</li>
+            <li>Citroen
+                    <ul id="innernav">
+                        <li>C-Zero</li>
+                        <li>C1</li>
+                        <li>C2</li>
+                        <li>C3 Picasso</li>
+                        <li>C3 Pluriel</li>
+                        <li>C-Elysee</li>
+                    </ul>
+            </li>
+            <li>Ford</li>
+        </ul>
+    </div>
+    <div>DIV 3
+        <div>DIV 4 in DIV3</div>
+    </div>
 
 <script>
-$( document ).ready(function(){
-	//Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
-	//En: Important! Before doing the next task, comment the previous decision.
+$(function(){
+    //Ru: Важно! Перед выполнением очередного задания, закомментируйте предыдущее решение.
+    //En: Important! Before doing the next task, comment the previous decision.
 
-	//Ru: Задание 1. Выбрать все заголовки и применить красную рамку к ним.
-	//En: Task 1. Select all headers and apply red border to them.
-
-
-
-	//Ru: Задание 2. Выбрать первый элемент <li> вложенного списка <ul> и применить красную рамку к нему.
-	//En: Task 2. Select first element <li> of nested list <ul> and apply red border to it.
+    //Ru: Задание 1. Выбрать все заголовки и применить красную рамку к ним.
+    //En: Task 1. Select all headers and apply red border to them.
 
 
 
-	//Ru: Задание 3. Выбрать последний элемент <li> внешнего списка <ul> и применить красную рамку к нему.
-	//En: Task 3. Select last element <li> of outer list <ul> and apply red border to it.
+    //Ru: Задание 2. Выбрать первый элемент <li> вложенного списка <ul> и применить красную рамку к нему.
+    //En: Task 2. Select first element <li> of nested list <ul> and apply red border to it.
 
 
 
-
-	//Ru: Задание 4. Выбрать все четные (для пользователя) элементы <li> вложенного списка <ul> и применить красную рамку к ним.
-	//En: Task 4. Select all even (for user) elements <li> of nested list <ul> and apply red border to them.
-
-
-
-	//Ru: Задание 5. Выбрать 4-ый элемент <div> на странице и применить красную рамку к нему.
-	//En: Task 5. Select the 4-th element <div> on tha page and apply red border to it.
+    //Ru: Задание 3. Выбрать последний элемент <li> внешнего списка <ul> и применить красную рамку к нему.
+    //En: Task 3. Select last element <li> of outer list <ul> and apply red border to it.
 
 
 
 
-	//Ru: Задание 6. Выбрать все элементы <li> внутреннего списка <ul>, которые следуют после 3-го (для пользователя) элемента <li> и применить красную рамку к ним.
-	//En: Task 6. Select all elements <li> of the nested list <ul> that folow after 3-rd (for user) element <li>.
+    //Ru: Задание 4. Выбрать все четные (для пользователя) элементы <li> вложенного списка <ul> и применить красную рамку к ним.
+    //En: Task 4. Select all even (for user) elements <li> of nested list <ul> and apply red border to them.
+
+
+
+    //Ru: Задание 5. Выбрать 4-ый элемент <div> на странице и применить красную рамку к нему.
+    //En: Task 5. Select the 4-th element <div> on tha page and apply red border to it.
+
+
+
+
+    //Ru: Задание 6. Выбрать все элементы <li> внутреннего списка <ul>, которые следуют после 3-го (для пользователя) элемента <li> и применить красную рамку к ним.
+    //En: Task 6. Select all elements <li> of the nested list <ul> that folow after 3-rd (for user) element <li>.
 
 
 
 
 
-	//Ru: Задание 7. Выбрать все элементы <p> на странице до 3-го элемента <p> и применить красную рамку у ним.
-	//En: Task 7. Select all elements <p> on the page before 3-rd element <p> and apply red border to them.
+    //Ru: Задание 7. Выбрать все элементы <p> на странице до 3-го элемента <p> и применить красную рамку у ним.
+    //En: Task 7. Select all elements <p> on the page before 3-rd element <p> and apply red border to them.
 
 
 
 
-	//Ru: Задание 8. Выбрать все элементы <p>, кроме тех, у которых есть атрибут class='c2' и применить красную рамку к ним.
-	//En: Task 8. Select all elements <p> except those that have attribute class='c2' and apply red border to them.
+    //Ru: Задание 8. Выбрать все элементы <p>, кроме тех, у которых есть атрибут class='c2' и применить красную рамку к ним.
+    //En: Task 8. Select all elements <p> except those that have attribute class='c2' and apply red border to them.
 
 
 });
